@@ -1,0 +1,52 @@
+{% extends 'shop/layouts/main.html' %}
+
+{% block title %}
+Whoops! | 🩵
+{% endblock title %}
+
+{% block content %}
+<section class="bg-light py-4 my-5" >
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h4 class="mb-3">{{ subcategory_name | upper }}</h4>
+        <hr style="border-color: #b8bfc2;">
+        {% include 'shop/inc/breadcrumb.html' with category_name=category_name subcategory_name=subcategory_name category_slug=category_slug %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container" style="min-height: 800px;">
+  <div class="row justify-content-center">
+    {% for item in products %}
+    <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+      <div class="card_p">
+        <img src="{{ item.product_image.url }}" class="card-img-top" alt="{{ item.name }}">
+        <a href="{% url 'shop:product_details' item.subcategory.category.slug item.subcategory.slug item.slug %}" class="stretched-link"></a>
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">
+            <span class="float-end old_price">Rs.{{ item.original_price|stringformat:'d' }}</span>
+            <span class="float-start new_price">Rs.{{ item.selling_price|stringformat:'d' }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% if products %}
+  <div class="text-center mt-4">
+    <p>Showing {{ products.count }} products</p>
+  </div>
+{% else %}
+  <div class="text-center mt-4">
+    <p><strong>No products found.</strong></p>
+  </div>
+{% endif %}
+
+
+{% endblock content %}

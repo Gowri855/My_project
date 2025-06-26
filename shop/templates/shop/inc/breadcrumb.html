@@ -1,0 +1,29 @@
+<!-- shop/inc/breadcrumb.html -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb bg-light px-0">
+    <li class="breadcrumb-item">
+      <a href="{% url 'shop:home' %}" class="text-decoration-none">Home</a>
+    </li>
+
+    {% if category_name %}
+    <li class="breadcrumb-item">
+      <a href="{% url 'shop:collections' %}" class="text-decoration-none">Collections</a>
+    </li>
+    {% endif %}
+
+    {% if subcategory_name and category_slug %}
+    <li class="breadcrumb-item">
+      <a href="{% url 'shop:subcollections' category_slug %}" class="text-decoration-none">{{ category_name }}</a>
+    </li>
+    {% endif %}
+
+    {% if product and product.subcategory %}
+    <li class="breadcrumb-item">
+      <a href="{% url 'shop:product' product.subcategory.category.slug product.subcategory.slug %}" class="text-decoration-none">
+        {{ product.subcategory.name }}
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
+    {% endif %}
+  </ol>
+</nav>

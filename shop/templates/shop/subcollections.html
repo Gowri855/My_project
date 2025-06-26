@@ -1,0 +1,36 @@
+{% extends 'shop/layouts/main.html' %}
+
+{% block title %}
+{{ category_name }} | Subcollections | Whoops!
+{% endblock title %}
+
+{% block content %}
+
+<section class="bg-light py-4 my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h4 class="mb-3">{{ category_name | upper }}</h4>
+        <hr style="border-color:#b8bfc2;">
+        {% include 'shop/inc/breadcrumb.html' with category_name=category_name category_slug=category_slug %}
+
+      </div>
+
+      {% for item in subcategory %}
+      <div class="col-md-4 col-lg-3" style="min-height: 800px;">
+        <div class="card bg-light my-3 box">
+          <img src="{{ item.image.url }}" class="card-image-top" alt="SubCategory">
+          <a href="{% url 'shop:product' category_slug item.slug %}" class="stretched-link"></a>
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+{% endblock content %}
