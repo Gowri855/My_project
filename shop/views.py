@@ -1,5 +1,7 @@
+import json
+from django.http import JsonResponse
 from django.shortcuts import redirect, render, get_object_or_404
-from .models import Category, SubCategory, Product
+from .models import Category, SubCategory, Product, Cart
 from .form import CustomUserForm 
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
@@ -7,6 +9,82 @@ from django.contrib.auth import authenticate, login, logout
 def home(request):
     products = Product.objects.filter(trending=1)
     return render(request, 'shop/index.html', {"products": products,})
+
+
+def wishlist_page(request):
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+        if request.user.is_authenticated:
+            data = json.loads(request.body) 
+            product_qty = int(data['product_qty'])
+            product_id = int(data['pid'])
+
+            product_status = Product.objects.get(id=product_id)
+
+            if product_status:
+                if Cart.objects.filter(user=request.user, product=product_status).exists():
+                    return JsonResponse({"status": "Product already in cart"}, status=200)
+                else:
+                    if product_status.quantity >= product_qty:
+                        Cart.objects.create(user=request.user, product=product_status, product_qty=product_qty)
+                        return JsonResponse({"status": "Product added to cart"}, status=200)
+                    else:
+                        return JsonResponse({"status": "Product quantity is not available"}, status=200)
+        else:
+            return JsonResponse({"status": "Login to continue"}, status=401)
+    return JsonResponse({"status": "Invalid request"}, status=400)
+
+def cart_page(request):
+    if request.user.is_authenticated:
+        cart= Cart.objects.filter(user=request.user)
+       # total_price = sum(item.product.price * item.product_qty for item in cart_items)
+        return render(request, 'shop/cart.html', {
+            "cart": cart
+           # "total_price": total_price
+        })
+    else:
+        # Redirect to login page or show an error if user is not authenticated
+        return redirect('/login')
+        
+
+
+
+
+
+
+
+
+
+def add_to_cart(request):
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+        if request.user.is_authenticated:
+            data = json.loads(request.body) 
+            product_qty = int(data['product_qty'])
+            product_id = int(data['pid'])
+
+            product_status = Product.objects.get(id=product_id)
+
+            if product_status:
+                if Cart.objects.filter(user=request.user, product=product_status).exists():
+                    return JsonResponse({"status": "Product already in cart"}, status=200)
+                else:
+                    if product_status.quantity >= product_qty:
+                        Cart.objects.create(user=request.user, product=product_status, product_qty=product_qty)
+                        return JsonResponse({"status": "Product added to cart"}, status=200)
+                    else:
+                        return JsonResponse({"status": "Product quantity is not available"}, status=200)
+        else:
+            return JsonResponse({"status": "Login to continue"}, status=401)
+    return JsonResponse({"status": "Invalid request"}, status=400)
+
+
+
+
+def remove_cart(request, cart_item_id):
+    cartitem=Cart.objects.get(id=cart_item_id)
+    cartitem.delete()
+    return redirect('/cart')
+
+
 
 def logout_page(request):
     if request.user.is_authenticated:
