@@ -1,0 +1,27 @@
+{% extends 'shop/layouts/main.html' %}
+{% block title %}My Wishlist{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+  <h3> 🩵 My Wishlist</h3>
+  <hr>
+  {% if wishlist_items %}
+    <div class="row">
+      {% for item in wishlist_items %}
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="{{ item.product.product_image.url }}" class="card-img-top" alt="{{ item.product.name }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.product.name }}</h5>
+              <p>Rs. {{ item.product.selling_price }}</p>
+              <a href="{% url 'shop:product_details' category_slug=item.product.subcategory.category.slug subcategory_slug=item.product.subcategory.slug product_slug=item.product.slug %}" class="btn" style="color: black; background-color:rgb(124, 146, 146);"><b>View</b></a>
+              <a href="{% url 'shop:remove_wishlist' wishlist_item_id=item.id %}" class="btn" style="color: black; background-color:rgba(129, 78, 58, 0.668);"><b>Remove</b></a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>You have no items in your wishlist yet.</p>
+  {% endif %}
+</div>
+{% endblock content %}

@@ -1,63 +1,87 @@
 {% extends 'shop/layouts/main.html' %}
 
-{% block title %}
-Collections | Whoops!
-{% endblock title %}
+{% block title %}🛒 My Cart{% endblock title %}
+
 {% block content %}
+<style>
+  /* Sticky Sidebar Styling */
+  .sticky-summary {
+    position: sticky;
+    top: 90px; /* distance from top of viewport */
+    z-index: 100;
+  }
+</style>
 
+<div class="container py-5" >
+  <h2 class="mb-4 fw-bold" style="padding-top: 30px;">🛍️ Shopping Cart</h2>
 
-<section class="bg-light py-4 my-5 style="min-height: 800px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h4 class="mb-3">CART</h4>
-        <hr style="border-color:#b8bfc2;">
-
+  {% if cart_items %}
+  <div class="row">
+    <!-- 🛒 Cart Items Section -->
+    <div class="col-lg-8">
+      {% for item in cart_items %}
+      <div class="card mb-4 shadow-sm border-0 rounded-4">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="{{ item.product.product_image.url }}" class="img-fluid rounded-start" style="height: 220px; width: 100%; object-fit: cover;" alt="{{ item.product.name }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold">{{ item.product.name }}</h5>
+              <p class="mb-2 text-muted">Price: <strong>Rs. {{ item.product.selling_price }}</strong></p>
+              <p class="mb-2">Quantity: <span class="badge bg-secondary">{{ item.product_qty }}</span></p>
+              <p class="mb-3 text-success amt">Total: <strong>Rs. {{ item.product.selling_price|floatformat:0|add:item.product_qty|floatformat:0 }}</strong></p>
+              <a href="{% url 'shop:remove_cart' item.id %}" onclick="return confirm('Are you sure you want to remove this item?');" class="btn btn-outline-danger">
+                <i class="fa fa-trash"></i> Remove
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+      {% endfor %}
+    </div>
 
-      
-      <table class="table table-bordered">
-        <tr>
-          <th>Product</th>
-          <th>Image</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-          <th>Action</th>
-        </tr>
-        {% for item in cart %}
-          <tr>
-            <td><img src="{{ item.product.product_image.url }}" alt="{{ item.product.name }}" class="img-fluid" style=" height:170; width: 200px;"></td>
-            <td>{{ item.product.name }}</td>
-            <td>{{ item.product.selling_price | stringformat:"d"}}</td>
-            <td>{{ item.product_qty }}</td>
-            <td class="amt">{{ item.total_price | stringformat:"d"}}</td>
-            <td><a href="{% url 'shop:remove_cart' item.id %}"onclick="return confirm('Are you sure you want to remove this item?');">
-                <button class="btn" style="color: black; background-color:rgb(146, 124, 137);"><i class="fa fa-trash"></i> Remove</button></a>
-            </td>
-          </tr>
-        {% endfor %}
-        <tr>
-          <td colspan="4" class="text-end"><strong><b>Total Amount:</strong></td>
-          <td id="net" colspan="2">{{ total_amount | stringformat:"d" }}</td>
-        </td>
-      </table>
+    <!-- 💰 Sticky Order Summary -->
+    <div class="col-lg-4">
+      <div class="sticky-summary">
+        <div class="card p-4 shadow-sm rounded-4 bg-light">
+          <h4 class="fw-bold mb-3">Order Summary</h4>
+          <hr>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Subtotal:</span>
+            <span id="net">Rs. 0</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Shipping:</span>
+            <span class="text-muted">Free</span>
+          </div>
+          <div class="d-flex justify-content-between fw-bold fs-5 border-top pt-2 mt-2">
+            <span>Total:</span>
+            <span id="total">Rs. 0</span>
+          </div>
+          <button class="btn btn-success w-100 mt-4 rounded-pill fw-bold">Proceed to Checkout</button>
+        </div>
+      </div>
     </div>
   </div>
-</section>
+  {% else %}
+    <div class="text-center py-5">
+      <h5 class="text-muted">😔 Your cart is empty</h5>
+      <a href="/" class="btn btn-outline-primary mt-3">Continue Shopping</a>
+    </div>
+  {% endif %}
+</div>
 
-
-<!-- SweetAlert2 JS -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+<!-- 🧮 JavaScript for Total Calculation -->
 <script>
-  const nodes=document.querySelectorAll('.amt');
-  const arr = Array.from(nodes);
-  const res = arr.reduce((acc, curr) => {
-    return acc + parseInt(curr.innerText);
-  }, 0);
-  document.getElementById('net').innerText ="Rs." + res;
+  const prices = document.querySelectorAll('.amt');
+  let subtotal = 0;
+  prices.forEach(el => {
+    const amount = parseInt(el.innerText.replace('Total: Rs.', '').trim());
+    subtotal += isNaN(amount) ? 0 : amount;
+  });
+
+  document.getElementById('net').innerText = "Rs. " + subtotal;
+  document.getElementById('total').innerText = "Rs. " + subtotal;
 </script>
-
-
-
 {% endblock content %}

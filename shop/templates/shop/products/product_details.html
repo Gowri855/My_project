@@ -67,8 +67,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     let currentValue = parseInt(quantityInput.value, 10);
     currentValue = isNaN(currentValue) ? 0 : currentValue;
     if (currentValue < 10) {
-      currentValue++;
-      quantityInput.value = currentValue;
+      quantityInput.value = currentValue + 1;
     }
   });
 
@@ -76,15 +75,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
     let currentValue = parseInt(quantityInput.value, 10);
     currentValue = isNaN(currentValue) ? 0 : currentValue;
     if (currentValue > 1) {
-      currentValue--;
-      quantityInput.value = currentValue;
+      quantityInput.value = currentValue - 1;
     }
   });
 
   btncart.addEventListener("click", function() {
     let currentValue = parseInt(quantityInput.value, 10);
-    currentValue = isNaN(currentValue) ? 1 : currentValue;
-
     if (currentValue > 0) {
       let postObj = {
         product_qty: currentValue,
@@ -102,13 +98,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         },
         body: JSON.stringify(postObj)
       })
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error('Network response was not ok');
-        }
-      })
+      .then(response => response.json())
       .then(data => {
         Swal.fire({
           icon: data.status === "Product added to cart" ? 'success' : 'info',
@@ -125,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
           text: 'Something went wrong while adding to cart!',
         });
       });
-
     } else {
       Swal.fire({
         icon: 'warning',
@@ -134,63 +123,43 @@ document.addEventListener('DOMContentLoaded', function(event) {
       });
     }
   });
-});
 
+  btnwishlist.addEventListener("click", function () {
+    let postObj = {
+      pid: pid.value
+    };
 
-  btnwishlist.addEventListener("click", function() {
-      let currentValue = parseInt(quantityInput.value, 10);
-      currentValue = isNaN(currentValue) ? 1 : currentValue;
-
-      if (currentValue > 0) {
-        let postObj = {
-          product_qty: currentValue,
-          pid: pid.value
-        };
-
-        fetch("{% url 'shop:add_to_cart' %}", {
-          method: "POST",
-          credentials: "same-origin",
-          headers: {
-            "Accept": "application/json",
-            "X-Requested-With": "XMLHttpRequest",
-            "X-CSRFToken": tnk,
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(postObj)
-        })
-        .then(response => {
-          if (response.ok) {
-            return response.json();
-          } else {
-            throw new Error('Network response was not ok');
-          }
-        })
-        .then(data => {
-          Swal.fire({
-            icon: data.status === "Product added to cart" ? 'success' : 'info',
-            title: data.status,
-            confirmButtonColor: '#3085d6',
-            confirmButtonText: 'OK'
-          });
-        })
-        .catch(error => {
-          console.error('Fetch error:', error);
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Something went wrong while adding to cart!',
-          });
-        });
-
-      } else {
-        Swal.fire({
-          icon: 'warning',
-          title: 'Invalid Quantity',
-          text: 'Please select a valid quantity before adding to cart.'
-        });
-      }
+    fetch("{% url 'shop:wishlist' %}", {
+      method: "POST",
+      credentials: "same-origin",
+      headers: {
+        "Accept": "application/json",
+        "X-Requested-With": "XMLHttpRequest",
+        "X-CSRFToken": tnk,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(postObj)
+    })
+    .then(response => response.json())
+    .then(data => {
+      Swal.fire({
+        icon: data.status === "Added to Wishlist" ? 'success' : 'info',
+        title: data.status,
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'OK'
+      });
+    })
+    .catch(error => {
+      console.error('Fetch error:', error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Something went wrong while adding to wishlist!',
+      });
     });
-
+  });
+});
 </script>
+
 
 {% endblock content %}
