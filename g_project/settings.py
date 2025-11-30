@@ -68,7 +68,8 @@ WSGI_APPLICATION = 'g_project.wsgi.application'
 
 USE_RENDER_DB = os.getenv("USE_RENDER_DB", "False") == "True"
 
-if USE_RENDER_DB:
+if os.getenv("USE_RENDER_DB") == "True":
+
     # Render PostgreSQL
     DATABASES = {
         "default": {
@@ -77,7 +78,7 @@ if USE_RENDER_DB:
             "USER": os.getenv("whoops_db_user"),
             "PASSWORD": os.getenv("BWOgmLZeshPrnVhGKdxOTf2HQFlItlzA"),
             "HOST": os.getenv("dpg-d4luvf3uibrs738910mg-a.singapore-postgres.render.com"),
-            "PORT": os.getenv(5432),
+            "PORT": os.getenv("5432"),
         }
     }
 
