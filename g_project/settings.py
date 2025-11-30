@@ -5,19 +5,28 @@ Django settings for g_project.
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import dj_database_url  # for parsing DATABASE_URL (optional)
 
+# Load environment variables
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# ----------------------
 # SECURITY
-SECRET_KEY = 'django-insecure-^dni17qb2b7yq_%cvgn7ib^g3oydck5#p%3kuskvfbngfckd*#'
+# ----------------------
+SECRET_KEY = os.getenv(
+    "DJANGO_SECRET_KEY",
+    "django-insecure-^dni17qb2b7yq_%cvgn7ib^g3oydck5#p%3kuskvfbngfckd*#"
+)
 
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
 
-# Apps
+# ----------------------
+# INSTALLED APPS
+# ----------------------
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
@@ -32,7 +41,9 @@ INSTALLED_APPS = [
     'cart',
 ]
 
-# Middleware
+# ----------------------
+# MIDDLEWARE
+# ----------------------
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -43,12 +54,18 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# ----------------------
+# ROOT URL CONFIG
+# ----------------------
 ROOT_URLCONF = 'g_project.urls'
 
+# ----------------------
+# TEMPLATES
+# ----------------------
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],  # add your template folder
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -60,42 +77,44 @@ TEMPLATES = [
     },
 ]
 
+# ----------------------
+# WSGI
+# ----------------------
 WSGI_APPLICATION = 'g_project.wsgi.application'
 
-# =========================
-# ⭐ DATABASE CONFIGURATION
-# =========================
-
+# ----------------------
+# DATABASE CONFIGURATION
+# ----------------------
 USE_RENDER_DB = os.getenv("USE_RENDER_DB", "False") == "True"
 
 if USE_RENDER_DB:
     # Render PostgreSQL
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.getenv("RENDER_DB_NAME"),
-            "USER": os.getenv("RENDER_DB_USER"),
-            "PASSWORD": os.getenv("RENDER_DB_PASSWORD"),
-            "HOST": os.getenv("RENDER_DB_HOST"),
-            "PORT": os.getenv("RENDER_DB_PORT"),
+            "ENGINE": 'django.db.backends.postgresql',
+            "NAME": os.getenv("POSTGRES_DB"),
+            "USER": os.getenv("POSTGRES_USER"),
+            "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+            "HOST": os.getenv("POSTGRES_HOST"),
+            "PORT": os.getenv("POSTGRES_PORT", "5432"),
         }
     }
-
 else:
-    # LOCAL MySQL — your product DB (django_g)
+    # LOCAL PostgreSQL
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.mysql",
-            "NAME": "django_g",
-            "USER": "root",
-            "PASSWORD": "root",
-            "HOST": "localhost",
-            "PORT": "3306",
+            "ENGINE": 'django.db.backends.postgresql',
+            "NAME": os.getenv("LOCAL_DB_NAME", "whoops_db"),
+            "USER": os.getenv("LOCAL_DB_USER", "postgres"),
+            "PASSWORD": os.getenv("LOCAL_DB_PASSWORD", "postgres"),
+            "HOST": os.getenv("LOCAL_DB_HOST", "localhost"),
+            "PORT": os.getenv("LOCAL_DB_PORT", "5432"),
         }
     }
 
-# =========================
-
+# ----------------------
+# AUTH PASSWORD VALIDATORS
+# ----------------------
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -103,20 +122,36 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
+# ----------------------
+# LANGUAGE & TIMEZONE
+# ----------------------
 LANGUAGE_CODE = "en-us"
-TIME_ZONE = "UTC"
-
+TIME_ZONE = "Asia/Kolkata"
 USE_I18N = True
 USE_TZ = True
 
+# ----------------------
+# STATIC FILES
+# ----------------------
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    BASE_DIR / 'static',
 ]
 
+# ----------------------
+# MEDIA FILES
+# ----------------------
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_ROOT = BASE_DIR / "media"
 
+# ----------------------
+# DEFAULT AUTO FIELD
+# ----------------------
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# ----------------------
+# LOGIN URL
+# ----------------------
+LOGIN_URL = '/accounts/login/'
