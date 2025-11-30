@@ -73,7 +73,7 @@ if os.getenv("USE_RENDER_DB") == "True":
     # Render PostgreSQL
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.postgresql",
+            "ENGINE": 'django.db.backends.postgresql',
             "NAME": os.getenv("whoops_db"),
             "USER": os.getenv("whoops_db_user"),
             "PASSWORD": os.getenv("BWOgmLZeshPrnVhGKdxOTf2HQFlItlzA"),
@@ -91,7 +91,7 @@ else:
             "USER": "root",
             "PASSWORD": "root",
             "HOST": "localhost",
-            "PORT": 3306,
+            "PORT": "3306",
         }
     }
 
