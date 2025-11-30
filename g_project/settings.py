@@ -68,17 +68,16 @@ WSGI_APPLICATION = 'g_project.wsgi.application'
 
 USE_RENDER_DB = os.getenv("USE_RENDER_DB", "False") == "True"
 
-if os.getenv("USE_RENDER_DB") == "True":
-
+if USE_RENDER_DB:
     # Render PostgreSQL
     DATABASES = {
         "default": {
-            "ENGINE": 'django.db.backends.postgresql',
-            "NAME": os.getenv("whoops_db"),
-            "USER": os.getenv("whoops_db_user"),
-            "PASSWORD": os.getenv("BWOgmLZeshPrnVhGKdxOTf2HQFlItlzA"),
-            "HOST": os.getenv("dpg-d4luvf3uibrs738910mg-a.singapore-postgres.render.com"),
-            "PORT": os.getenv("5432"),
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.getenv("RENDER_DB_NAME"),
+            "USER": os.getenv("RENDER_DB_USER"),
+            "PASSWORD": os.getenv("RENDER_DB_PASSWORD"),
+            "HOST": os.getenv("RENDER_DB_HOST"),
+            "PORT": os.getenv("RENDER_DB_PORT"),
         }
     }
 
