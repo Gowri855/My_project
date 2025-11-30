@@ -1,20 +1,23 @@
+"""
+Django settings for g_project.
+"""
+
 import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()  # Load environment variables from .env
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-default-key')
+# SECURITY
+SECRET_KEY = 'django-insecure-^dni17qb2b7yq_%cvgn7ib^g3oydck5#p%3kuskvfbngfckd*#'
 
-# DEBUG
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = os.getenv("DEBUG", "True") == "True"
 
-# ALLOWED_HOSTS
-ALLOWED_HOSTS = ['your-render-service-name.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ["*"]
 
-# Installed apps
+# Apps
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
@@ -23,11 +26,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'shop',
     'orders',
     'cart',
 ]
 
+# Middleware
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -57,56 +62,61 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'g_project.wsgi.application'
 
-# -----------------------------
-# DATABASE CONFIGURATION
-# -----------------------------
-# Determine if we are running locally or on Render
-USE_RENDER_DB = os.getenv('USE_RENDER_DB', 'False') == 'True'
+# =========================
+# ⭐ DATABASE CONFIGURATION
+# =========================
+
+USE_RENDER_DB = os.getenv("USE_RENDER_DB", "False") == "True"
 
 if USE_RENDER_DB:
+    # Render PostgreSQL
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('RENDER_DB_NAME'),
-            'USER': os.getenv('RENDER_DB_USER'),
-            'PASSWORD': os.getenv('RENDER_DB_PASSWORD'),
-            'HOST': os.getenv('RENDER_DB_HOST'),
-            'PORT': os.getenv('RENDER_DB_PORT'),
-        }
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv('LOCAL_DB_NAME'),
-            'USER': os.getenv('LOCAL_DB_USER'),
-            'PASSWORD': os.getenv('LOCAL_DB_PASSWORD'),
-            'HOST': os.getenv('LOCAL_DB_HOST'),
-            'PORT': os.getenv('LOCAL_DB_PORT'),
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.getenv("whoops_db"),
+            "USER": os.getenv("whoops_db_user"),
+            "PASSWORD": os.getenv("BWOgmLZeshPrnVhGKdxOTf2HQFlItlzA"),
+            "HOST": os.getenv("dpg-d4luvf3uibrs738910mg-a.singapore-postgres.render.com"),
+            "PORT": os.getenv(5432),
         }
     }
 
-# Password validation
+else:
+    # LOCAL MySQL — your product DB (django_g)
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.mysql",
+            "NAME": "django_g",
+            "USER": "root",
+            "PASSWORD": "root",
+            "HOST": "localhost",
+            "PORT": 3306,
+        }
+    }
+
+# =========================
+
 AUTH_PASSWORD_VALIDATORS = [
-    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',},
-    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',},
+    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-# Internationalization
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = "en-us"
+TIME_ZONE = "UTC"
+
 USE_I18N = True
 USE_TZ = True
 
-# Static files
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-# Media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
