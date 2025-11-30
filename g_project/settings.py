@@ -71,14 +71,13 @@ load_dotenv()  # Load environment variables from .env file
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT'),
+        'NAME': os.getenv('whoops_db'),
+        'USER': os.getenv('whoops_db_user'),
+        'PASSWORD': os.getenv('BWOgmLZeshPrnVhGKdxOTf2HQFlItlzA'),
+        'HOST': os.getenv('dpg-d4luvf3uibrs738910mg-a.singapore-postgres.render.com'),
+        'PORT': os.getenv('5432'),
     }
 }
-
 
 
 # Password validation
