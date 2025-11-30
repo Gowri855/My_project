@@ -4,6 +4,7 @@ Django settings for g_project project.
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -62,16 +63,23 @@ WSGI_APPLICATION = 'g_project.wsgi.application'
 
 # Database
 # Replace these placeholders with your Render MySQL credentials
+# settings.py
+
+
+load_dotenv()  # Load environment variables from .env file
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'your_database_name',
-        'USER': 'your_database_user',
-        'PASSWORD': 'your_database_password',
-        'HOST': 'your_database_host',
-        'PORT': 'your_database_port',  # usually 3306
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
     }
 }
+
+
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
