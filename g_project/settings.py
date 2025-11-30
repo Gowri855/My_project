@@ -1,24 +1,20 @@
-"""
-Django settings for g_project project.
-"""
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+load_dotenv()  # Load environment variables from .env
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY
-SECRET_KEY = 'django-insecure-^dni17qb2b7yq_%cvgn7ib^g3oydck5#p%3kuskvfbngfckd*#'
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-default-key')
 
-# Set DEBUG to False for production
-DEBUG = False
+# DEBUG
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-# Replace with your Render service URL or custom domain
-ALLOWED_HOSTS = ['your-render-service-name.onrender.com']
+# ALLOWED_HOSTS
+ALLOWED_HOSTS = ['your-render-service-name.onrender.com', '127.0.0.1', 'localhost']
 
-# Application definition
+# Installed apps
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
@@ -47,7 +43,7 @@ ROOT_URLCONF = 'g_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # add template directories if needed
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -61,24 +57,34 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'g_project.wsgi.application'
 
-# Database
-# Replace these placeholders with your Render MySQL credentials
-# settings.py
+# -----------------------------
+# DATABASE CONFIGURATION
+# -----------------------------
+# Determine if we are running locally or on Render
+USE_RENDER_DB = os.getenv('USE_RENDER_DB', 'False') == 'True'
 
-
-load_dotenv()  # Load environment variables from .env file
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('whoops_db'),
-        'USER': os.getenv('whoops_db_user'),
-        'PASSWORD': os.getenv('BWOgmLZeshPrnVhGKdxOTf2HQFlItlzA'),
-        'HOST': os.getenv('dpg-d4luvf3uibrs738910mg-a.singapore-postgres.render.com'),
-        'PORT': os.getenv('5432'),
+if USE_RENDER_DB:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('RENDER_DB_NAME'),
+            'USER': os.getenv('RENDER_DB_USER'),
+            'PASSWORD': os.getenv('RENDER_DB_PASSWORD'),
+            'HOST': os.getenv('RENDER_DB_HOST'),
+            'PORT': os.getenv('RENDER_DB_PORT'),
+        }
     }
-}
-
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('LOCAL_DB_NAME'),
+            'USER': os.getenv('LOCAL_DB_USER'),
+            'PASSWORD': os.getenv('LOCAL_DB_PASSWORD'),
+            'HOST': os.getenv('LOCAL_DB_HOST'),
+            'PORT': os.getenv('LOCAL_DB_PORT'),
+        }
+    }
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -94,17 +100,13 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
+# Static files
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # collectstatic output
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # your project static folder
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Media files
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # uploaded media files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
