@@ -1,136 +1,39 @@
-"""
-Django settings for g_project.
-"""
-
 import os
+import dj_database_url
 from pathlib import Path
-from dotenv import load_dotenv
-import dj_database_url  # for parsing DATABASE_URL (optional)
 
-# Load environment variables
-load_dotenv()
-
+# Build paths
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# ----------------------
-# INSTALLED APPS
-# ----------------------
-INSTALLED_APPS = [
-    'jazzmin',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+# Security settings
+SECRET_KEY = os.environ.get('SECRET_KEY', 'your-default-secret-key')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-    'shop',
-    'orders',
-    'cart',
-]
+# Allowed hosts
+ALLOWED_HOSTS = ['your-app-name.onrender.com', 'localhost', '127.0.0.1']
 
-# ----------------------
-# MIDDLEWARE
-# ----------------------
+# Add WhiteNoise to middleware (after SecurityMiddleware)
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this line
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # ... rest of your middleware
 ]
 
-# ----------------------
-# ROOT URL CONFIG
-# ----------------------
-ROOT_URLCONF = 'g_project.urls'
-
-# ----------------------
-# TEMPLATES
-# ----------------------
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],  # add your template folder
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
-
-# ----------------------
-# WSGI
-# ----------------------
-WSGI_APPLICATION = 'g_project.wsgi.application'
-
-
-
-ALLOWED_HOSTS = []
-
-# ----------------------
-# DATABASE CONFIGURATION
-# ----------------------
-
-    # Render PostgreSQL
+# Database configuration
 DATABASES = {
-        "default": {
-            "ENGINE": 'django.db.backends.postgresql',
-            "NAME": os.getenv("POSTGRES_DB"),
-            "USER": os.getenv("POSTGRES_USER"),
-            "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-            "HOST": os.getenv("POSTGRES_HOST"),
-            "PORT": os.getenv("POSTGRES_PORT", "5432"),
-        }
-    }
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL'),
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
 
-
-# ----------------------
-# AUTH PASSWORD VALIDATORS
-# ----------------------
-AUTH_PASSWORD_VALIDATORS = [
-    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
-    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
-    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},
-    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
-]
-
-# ----------------------
-# LANGUAGE & TIMEZONE
-# ----------------------
-LANGUAGE_CODE = "en-us"
-TIME_ZONE = "Asia/Kolkata"
-USE_I18N = True
-USE_TZ = True
-
-# ----------------------
-# STATIC FILES
-# ----------------------
+# Static files configuration
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
-
-# ----------------------
-# MEDIA FILES
-# ----------------------
-MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"
-
-# ----------------------
-# DEFAULT AUTO FIELD
-# ----------------------
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-# ----------------------
-# LOGIN URL
-# ----------------------
-LOGIN_URL = '/accounts/login/'
+# Media files configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
