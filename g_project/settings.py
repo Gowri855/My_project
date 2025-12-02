@@ -10,7 +10,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'your-default-secret-key')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # Allowed hosts
-ALLOWED_HOSTS = ['your-app-name.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['whoops-website', 'localhost', '127.0.0.1']
 
 # Add WhiteNoise to middleware (after SecurityMiddleware)
 MIDDLEWARE = [
