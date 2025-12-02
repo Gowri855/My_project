@@ -13,18 +13,6 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # ----------------------
-# SECURITY
-# ----------------------
-SECRET_KEY = os.getenv(
-    "DJANGO_SECRET_KEY",
-    "django-insecure-^dni17qb2b7yq_%cvgn7ib^g3oydck5#p%3kuskvfbngfckd*#"
-)
-
-DEBUG = os.getenv("DEBUG", "True") == "True"
-
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
-
-# ----------------------
 # INSTALLED APPS
 # ----------------------
 INSTALLED_APPS = [
@@ -82,14 +70,16 @@ TEMPLATES = [
 # ----------------------
 WSGI_APPLICATION = 'g_project.wsgi.application'
 
+
+
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
+
 # ----------------------
 # DATABASE CONFIGURATION
 # ----------------------
-USE_RENDER_DB = os.getenv("USE_RENDER_DB", "False") == "True"
 
-if USE_RENDER_DB:
     # Render PostgreSQL
-    DATABASES = {
+DATABASES = {
         "default": {
             "ENGINE": 'django.db.backends.postgresql',
             "NAME": os.getenv("POSTGRES_DB"),
@@ -99,18 +89,7 @@ if USE_RENDER_DB:
             "PORT": os.getenv("POSTGRES_PORT", "5432"),
         }
     }
-else:
-    # LOCAL PostgreSQL
-    DATABASES = {
-        "default": {
-            "ENGINE": 'django.db.backends.postgresql',
-            "NAME": os.getenv("LOCAL_DB_NAME", "whoops_db"),
-            "USER": os.getenv("LOCAL_DB_USER", "postgres"),
-            "PASSWORD": os.getenv("LOCAL_DB_PASSWORD", "postgres"),
-            "HOST": os.getenv("LOCAL_DB_HOST", "localhost"),
-            "PORT": os.getenv("LOCAL_DB_PORT", "5432"),
-        }
-    }
+
 
 # ----------------------
 # AUTH PASSWORD VALIDATORS
