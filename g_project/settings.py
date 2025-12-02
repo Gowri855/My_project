@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'g_project.wsgi.application'
 
 
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
+ALLOWED_HOSTS = []
 
 # ----------------------
 # DATABASE CONFIGURATION
