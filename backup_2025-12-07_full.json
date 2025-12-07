@@ -1,0 +1,3657 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-05-02T10:46:02.453Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Embroidery",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-05-02T10:46:49.643Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Resin Arts",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-05-02T10:48:06.246Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "BeadsWork",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-05-02T10:49:58.458Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Stationary",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-05-02T10:53:37.795Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Embroidery > Special Calendar Hoops",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-05-02T10:56:36.060Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Special Calendar Hoops > Birthday Calendar Hoop - Classic Wooden Charm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-05-02T10:57:53.796Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Special Calendar Hoops > Birthday Calendar Hoop - Floral Frame Delight",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-05-02T10:59:02.306Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Special Calendar Hoops > Birthday Calendar Hoop - Minimalist Modern Design",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-05-02T11:00:19.057Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Special Calendar Hoops > Birthday Calendar Hoop - Boho Vibe Edition",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-05-02T11:01:01.087Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Special Calendar Hoops > Birthday Calendar Hoop - Pastel Dreams",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-05-02T11:02:12.039Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Embroidery > Solo Birthday Hoops",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-05-02T11:03:08.890Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Solo Birthday Hoops > Birthday Hoop (Swing Design)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-05-02T11:03:53.043Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Solo Birthday Hoops > Birthday Hoop (Floral Field Design)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-05-02T11:05:49.783Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Solo Birthday Hoops > Home Decor Embroidery Hoops",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-05-02T11:06:28.196Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Embroidery > Wedding Hoops",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-05-02T11:09:23.183Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Wedding Hoops > Personalized Spotify Song Wedding Hoop",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-05-02T11:12:33.556Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Wedding Hoops > Romantic Wedding Couple Embroidery Hoop",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-05-02T11:15:44.070Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Wedding Hoops > Personalized Wedding Date Calendar Hoop",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-05-02T11:17:11.085Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Embroidery > Anniversary Hoops",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-05-02T11:19:46.256Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Anniversary Hoops > Couple Wedding Hoop Art",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-05-02T11:20:32.930Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Anniversary Hoops > Anniversary Embroidery Frame",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-05-02T11:21:32.552Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "BeadsWork > Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-05-02T11:23:54.642Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Bracelets > Butterfly Charm Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-05-02T11:24:48.170Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Bracelets > Crystal Beads Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-05-02T11:25:57.268Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "Bracelets > Green Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-05-02T11:27:14.797Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "Bracelets > Metal Charms Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-05-02T11:27:53.439Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "Bracelets > Star and Moon Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-05-02T11:28:53.030Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "Bracelets > Black and White Couple Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-05-02T11:29:31.724Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "Bracelets > Duo Shell Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-05-02T11:30:19.118Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "Bracelets > Tri panda Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-05-02T11:31:13.353Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "Bracelets > Matte finished Bracelets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-05-02T11:32:14.968Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "BeadsWork > KeyChains",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-05-02T11:33:03.631Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "23",
+    "object_repr": "KeyChains > Pearl Keychain",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-05-02T11:33:47.131Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "24",
+    "object_repr": "KeyChains > Pearl Key Chain with Charms",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-05-02T11:35:03.470Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "25",
+    "object_repr": "KeyChains > Beads Key Chain with flower hangings",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-05-02T11:36:56.278Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "26",
+    "object_repr": "KeyChains > Round pearl Key Chain",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-05-02T11:38:54.363Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "BeadsWork > PhoneCharms",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-05-02T11:39:27.883Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "27",
+    "object_repr": "PhoneCharms > Pearl with Bow Phone Charm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-05-02T11:40:27.867Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "28",
+    "object_repr": "PhoneCharms > Pearl Butterfly Phone Charm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-05-02T11:41:35.594Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Stationary > Notes Books",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-05-02T11:43:02.151Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "29",
+    "object_repr": "Notes Books > Butterfly Note Book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-05-02T11:44:21.266Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "30",
+    "object_repr": "Notes Books > Floral Note Book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-05-02T11:44:36.270Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "29",
+    "object_repr": "Notes Books > Butterfly Note Book",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-05-02T11:45:39.981Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "31",
+    "object_repr": "Notes Books > Goat Printed Combo Note",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-05-02T11:46:29.848Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "32",
+    "object_repr": "Notes Books > Unicorn Note Book",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-05-02T11:46:59.950Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "Stationary > BookMarks",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-05-02T11:48:54.782Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "33",
+    "object_repr": "BookMarks > White Book Mark",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-05-02T11:50:12.384Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "34",
+    "object_repr": "BookMarks > Black Unicorn Book Mark",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-05-02T11:51:22.306Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "BookMarks > Floral Book Mark",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-05-02T11:52:48.132Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "BookMarks > Combo Book Marks",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-05-02T11:55:29.608Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "37",
+    "object_repr": "BookMarks > Unicorn Book Mark",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-05-02T11:56:32.331Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "Resin Arts > Double Frame",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-05-02T11:57:09.731Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "Resin Arts > Resin Key Chains",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-05-02T11:57:56.984Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Resin Arts > Resin Frames",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-05-02T12:01:12.841Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "Double Frame > Personalized Floral Frame with White Border",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2025-05-02T12:04:06.062Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Double Frame > Double Photo Floral Frame with Pearl Detailing",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2025-05-02T12:07:07.854Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "40",
+    "object_repr": "Double Frame > Floral Keepsake Frame – Classic White Border",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2025-05-02T12:10:43.664Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "41",
+    "object_repr": "Resin Key Chains > Initial Pearl Resin Keychain",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2025-05-02T12:13:14.322Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "42",
+    "object_repr": "Resin Key Chains > Multi-Charm Yellow Resin Keychain",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2025-05-02T12:15:32.796Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "43",
+    "object_repr": "Resin Key Chains > Rectangle Floral Resin Keychain",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2025-05-02T12:17:05.634Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "44",
+    "object_repr": "Resin Key Chains > Drive Safe Round Resin Keychain",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2025-05-02T12:19:44.443Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "45",
+    "object_repr": "Resin Key Chains > Botanical Initial Resin Keychain",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2025-05-02T12:22:07.986Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "46",
+    "object_repr": "Resin Frames > Couple Resin Art Frame",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2025-05-02T12:45:04.893Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "47",
+    "object_repr": "Resin Frames > Round Baby Resin Art Frame",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2025-05-14T16:34:12.599Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "48",
+    "object_repr": "Resin Frames > Couple Round Rose Frame",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2025-05-14T16:36:59.260Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "49",
+    "object_repr": "Resin Frames > Wedding Round Frame",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2025-05-14T16:38:59.070Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "50",
+    "object_repr": "Resin Frames > Wedding Gift Resin Art Frame",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2025-05-14T16:39:33.699Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "49",
+    "object_repr": "Resin Frames > Wedding Round Frame",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2025-05-24T09:31:11.675Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Stationary",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2025-05-24T09:31:26.438Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "BeadsWork",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2025-05-24T09:31:36.200Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Resin Arts",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2025-05-24T09:31:51.700Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Embroidery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2025-05-24T15:00:52.249Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Stationary",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2025-05-24T15:01:02.179Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "BeadsWork",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2025-05-24T15:01:17.868Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Resin Arts",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2025-05-24T15:01:28.115Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Embroidery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2025-05-24T15:07:05.861Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Stationary",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2025-05-24T15:13:02.990Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "BeadsWork",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2025-05-24T15:13:35.221Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Stationary",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2025-05-24T15:13:53.354Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Resin Arts",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2025-05-24T15:14:12.257Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Embroidery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2025-05-24T15:18:07.518Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Stationary",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2025-05-24T15:18:16.587Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "BeadsWork",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2025-05-24T15:18:32.169Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Resin Arts",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2025-05-24T15:18:43.899Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Embroidery",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2025-05-25T14:35:05.558Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Resin Arts > Resin Frames",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2025-05-25T14:35:25.022Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "Resin Arts > Resin Key Chains",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2025-05-25T14:35:35.150Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "Resin Arts > Double Frame",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2025-05-25T14:35:50.887Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "Stationary > BookMarks",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2025-05-25T14:36:05.474Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Stationary > Notes Books",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2025-05-25T14:36:12.656Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "BeadsWork > PhoneCharms",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2025-05-25T14:40:20.118Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "BeadsWork > KeyChains",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2025-05-25T14:40:26.076Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "BeadsWork > Bracelets",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2025-05-25T14:40:33.504Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Embroidery > Anniversary Hoops",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2025-05-25T14:40:39.545Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Embroidery > Wedding Hoops",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2025-05-25T14:40:45.760Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Embroidery > Solo Birthday Hoops",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2025-05-25T14:40:52.934Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Embroidery > Special Calendar Hoops",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2025-05-26T07:46:29.574Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Wedding Hoops > Personalized Spotify Song Wedding Hoop",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Product image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2025-05-26T07:46:53.931Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Wedding Hoops > Romantic Wedding Couple Embroidery Hoop",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Product image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2025-05-26T07:47:10.687Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Wedding Hoops > Personalized Wedding Date Calendar Hoop",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Product image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2025-05-26T08:32:17.420Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "BeadsWork > KeyChains",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2025-05-26T08:32:45.161Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "BeadsWork > KeyChains",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2025-05-26T08:51:14.215Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "40",
+    "object_repr": "Double Frame > Floral Keepsake Frame – Classic White Border",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Product image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2025-05-26T08:53:17.123Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "45",
+    "object_repr": "Resin Key Chains > Botanical Initial Resin Keychain",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Product image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2025-06-17T16:26:20.594Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "50",
+    "object_repr": "Resin Frames > Wedding Gift Resin Art Frame",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2025-06-17T16:31:19.659Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "50",
+    "object_repr": "Resin Frames > Wedding Gift Resin Art Frame",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Quantity\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2025-06-18T14:32:07.018Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "50",
+    "object_repr": "Resin Frames > Wedding Gift Resin Art Frame",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2025-06-18T16:12:49.500Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "50",
+    "object_repr": "Resin Frames > Wedding Gift Resin Art Frame",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Trending\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2025-06-18T16:27:35.268Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Bracelets > Butterfly Charm Bracelets",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Trending\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2025-06-18T16:27:51.719Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Solo Birthday Hoops > Birthday Hoop (Swing Design)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Trending\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2025-06-18T16:28:00.546Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Double Frame > Double Photo Floral Frame with Pearl Detailing",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Trending\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2025-06-18T16:28:20.137Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "44",
+    "object_repr": "Resin Key Chains > Drive Safe Round Resin Keychain",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Trending\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2025-06-23T17:05:40.171Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "ajaigowri",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2025-06-23T17:05:45.562Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "parker",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2025-06-23T17:05:49.649Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "peter",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 7,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 7,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 7,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 7,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 8,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 8,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 8,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 8,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add sub category",
+    "content_type": 9,
+    "codename": "add_subcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change sub category",
+    "content_type": 9,
+    "codename": "change_subcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete sub category",
+    "content_type": 9,
+    "codename": "delete_subcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view sub category",
+    "content_type": 9,
+    "codename": "view_subcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add cart",
+    "content_type": 10,
+    "codename": "add_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change cart",
+    "content_type": 10,
+    "codename": "change_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete cart",
+    "content_type": 10,
+    "codename": "delete_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view cart",
+    "content_type": 10,
+    "codename": "view_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add wishlist_fav",
+    "content_type": 11,
+    "codename": "add_wishlist_fav"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change wishlist_fav",
+    "content_type": 11,
+    "codename": "change_wishlist_fav"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete wishlist_fav",
+    "content_type": 11,
+    "codename": "delete_wishlist_fav"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view wishlist_fav",
+    "content_type": 11,
+    "codename": "view_wishlist_fav"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add cart",
+    "content_type": 12,
+    "codename": "add_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change cart",
+    "content_type": 12,
+    "codename": "change_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete cart",
+    "content_type": 12,
+    "codename": "delete_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view cart",
+    "content_type": 12,
+    "codename": "view_cart"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add cart item",
+    "content_type": 13,
+    "codename": "add_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change cart item",
+    "content_type": 13,
+    "codename": "change_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete cart item",
+    "content_type": 13,
+    "codename": "delete_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view cart item",
+    "content_type": 13,
+    "codename": "view_cartitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add order item",
+    "content_type": 14,
+    "codename": "add_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change order item",
+    "content_type": 14,
+    "codename": "change_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete order item",
+    "content_type": 14,
+    "codename": "delete_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view order item",
+    "content_type": 14,
+    "codename": "view_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add payment",
+    "content_type": 15,
+    "codename": "add_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change payment",
+    "content_type": 15,
+    "codename": "change_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete payment",
+    "content_type": 15,
+    "codename": "delete_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view payment",
+    "content_type": 15,
+    "codename": "view_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add shipping address",
+    "content_type": 16,
+    "codename": "add_shippingaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change shipping address",
+    "content_type": 16,
+    "codename": "change_shippingaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete shipping address",
+    "content_type": 16,
+    "codename": "delete_shippingaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view shipping address",
+    "content_type": 16,
+    "codename": "view_shippingaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add order",
+    "content_type": 17,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change order",
+    "content_type": 17,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete order",
+    "content_type": 17,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view order",
+    "content_type": 17,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$AkAKI8Z1iA9nVzZWqSAvFj$FUyrEIrVCXRrXVHjWEYUgJ4/T2dkvmQ/DTaLElNeDZE=",
+    "last_login": "2025-11-26T06:31:02.278Z",
+    "is_superuser": true,
+    "username": "gowri855",
+    "first_name": "",
+    "last_name": "",
+    "email": "gowrim08052005@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-05-01T12:05:09.858Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "shop",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "shop",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "shop",
+    "model": "subcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "shop",
+    "model": "cart"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "shop",
+    "model": "wishlist_fav"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "cart",
+    "model": "cart"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "cart",
+    "model": "cartitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "orders",
+    "model": "orderitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "orders",
+    "model": "payment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "orders",
+    "model": "shippingaddress"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "orders",
+    "model": "order"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2l7x0szhec6w6oxzdc1ttzwmafyygplz",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uTkLD:vEqx5stZmL68JtZ53CxamEQdasSR0qwWeJAdLEUG2-k",
+    "expire_date": "2025-07-07T16:48:19.905Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6mdna6x1tlvuaks1lson4z2s21569nkq",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uTkLC:22HSNEX7NUIWFUduaoAIzPvph3NH9ofvA0TwHgdAInw",
+    "expire_date": "2025-07-07T16:48:18.879Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7ipxkou4qwjwj5tj64lu2t4ngmsgib2v",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uTkLE:5P7kBcIhLFkSPprKhCmXKlQimlBC3eHcii0_FeLEvrY",
+    "expire_date": "2025-07-07T16:48:20.346Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "a26v56r8bif9m0fev5vxwqnm99nf2s4j",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1vO93O:w94pra3zIAeHBYHUBZuBSfhZPsoBnDESJ8510Yp9Ve4",
+    "expire_date": "2025-12-10T06:31:02.286Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bkkwdmw4wqfjrhmfpio0h2m4l9q4s8ay",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uTkLE:5P7kBcIhLFkSPprKhCmXKlQimlBC3eHcii0_FeLEvrY",
+    "expire_date": "2025-07-07T16:48:20.149Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dta9flsjmxfh4pb673wl4ueksrt2w7hi",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uQnRy:wKSMYXaTy07XSIDPFlg0sTdhOF0gFj_gZV7I4gkmNBs",
+    "expire_date": "2025-06-29T13:31:06.154Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i0495bnwk0jwgntspos8le7qenjea4mf",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uTkLD:vEqx5stZmL68JtZ53CxamEQdasSR0qwWeJAdLEUG2-k",
+    "expire_date": "2025-07-07T16:48:19.900Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jqi9x3ald1t7iammmzzmcyfo2m7b190q",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1vFBaK:tSk7RxqGznpUJJ_VGhVPKR1Dn6BnjeQuLUdrwqYn2r4",
+    "expire_date": "2025-11-15T13:24:00.596Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l1ut8v889jyb3xxg2kf6ieh9xc46v0l4",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1vO93N:6_SP7vuK5ZWRBYSoH82uwxTFY2mPerCPy5_i76mw9B8",
+    "expire_date": "2025-12-10T06:31:01.108Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "oxa98pz4ws4vcs1bbmpv6blzr8u14g4v",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uFEdV:qoLyeu1s7SJZq2TDiOO9eytDgxHc5PQb5gkwo-SKlXU",
+    "expire_date": "2025-05-28T16:07:13.215Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pwclr2g0m3ioqmdei3wo4j70qlcja5la",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uYM3W:VGL2sgIkWCDQmo4GQXt1e3AM9tTiYl-jvE74Uy0UjMM",
+    "expire_date": "2025-07-20T09:53:06.994Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sr9ypw8b1daawise9s34ahdhoicve4a8",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uTkLA:vo8pJLyzte4Owcl_XgfznQb6N4OlI7COYLD1JAMJhN4",
+    "expire_date": "2025-07-07T16:48:16.454Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tvv84l9jmnqpyn783dvnia6ksqkqlm0e",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uTkLD:vEqx5stZmL68JtZ53CxamEQdasSR0qwWeJAdLEUG2-k",
+    "expire_date": "2025-07-07T16:48:19.516Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vngzkpo1t9s1el2bcxbd26e0crzyk4km",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1v01Nm:jMBjDsmnqVyrkxINzh87AqJPfhC0lfW6MZ_KPm9J2tQ",
+    "expire_date": "2025-10-04T17:28:22.038Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xikcggr1y3saj0uq6rmtjb17skkeuz2j",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZ_-JQ0nMGa71r4wCypTipEHeHSCmgfTPzXiLgtpaw9bSEmcVZgDj9bhHpkeoO-I711iS1ui5zlLsiD9rltXF6Xg7376BgL9_aaTUqyGiI2CI66zJpbdSULQM6P0TymiDqOCl0PCTmOHpDCEYzeBDvD-kjOBk:1uTkbS:UtPsZIJHUD4Pjtie_Ukp1ptiJ2yXoDXfUUXDkVW1uMM",
+    "expire_date": "2025-07-07T17:05:06.095Z"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Embroidery",
+    "slug": "embroidery",
+    "image": "uploads/20250524204843_Embroidery.png",
+    "description": "HandMade Embroidery",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T10:46:02.396Z"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Resin Arts",
+    "slug": "resin-arts",
+    "image": "uploads/20250524204832_ResinArt.png",
+    "description": "Resin Art with Resin",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T10:46:49.635Z"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "BeadsWork",
+    "slug": "beadswork",
+    "image": "uploads/20250524204816_BeadsWork.png",
+    "description": "Beads with Bracelets, keychains, and PhoneCharms",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T10:48:06.242Z"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {
+    "name": "Stationary",
+    "slug": "stationary",
+    "image": "uploads/20250524204807_Stationary.png",
+    "description": "Stationary items like notebooks, and bookmarks",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T10:49:58.458Z"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "Special Calendar Hoops",
+    "slug": "special-calendar-hoops",
+    "description": "HandMade Embroidery Hoops",
+    "image": "uploads/20250525201052_Embroidery.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Solo Birthday Hoops",
+    "slug": "solo-birthday-hoops",
+    "description": "HandMade Solo Birthday Embroidery Hoops",
+    "image": "uploads/20250525201045_Embroidery.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name": "Wedding Hoops",
+    "slug": "wedding-hoops",
+    "description": "HandMade Wedding Embroidery Hoops",
+    "image": "uploads/20250525201039_Embroidery.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "name": "Anniversary Hoops",
+    "slug": "anniversary-hoops",
+    "description": "HandMade Anniversary Embroidery Hoops",
+    "image": "uploads/20250525201033_Embroidery.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 5,
+  "fields": {
+    "category": 3,
+    "name": "Bracelets",
+    "slug": "bracelets",
+    "description": "HandMade Bracelets using Beads.",
+    "image": "uploads/20250525201026_BeadsWork.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 6,
+  "fields": {
+    "category": 3,
+    "name": "KeyChains",
+    "slug": "keychains",
+    "description": "HandMade Keychains, Bag Charms with Beads.",
+    "image": "uploads/20250525201020_BeadsWork.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 7,
+  "fields": {
+    "category": 3,
+    "name": "PhoneCharms",
+    "slug": "phonecharms",
+    "description": "HandMade Phone Charms made with Beads.",
+    "image": "uploads/20250525200612_BeadsWork.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 8,
+  "fields": {
+    "category": 4,
+    "name": "Notes Books",
+    "slug": "notes-books",
+    "description": "Notebooks with vibrant cover pages.",
+    "image": "uploads/20250525200605_Stationary.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 9,
+  "fields": {
+    "category": 4,
+    "name": "BookMarks",
+    "slug": "bookmarks",
+    "description": "BookMarks with unique patterns.",
+    "image": "uploads/20250525200550_Stationary.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 10,
+  "fields": {
+    "category": 2,
+    "name": "Double Frame",
+    "slug": "double-frame",
+    "description": "Double Framed Resin Art.",
+    "image": "uploads/20250525200535_ResinArt.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 11,
+  "fields": {
+    "category": 2,
+    "name": "Resin Key Chains",
+    "slug": "resin-key-chains",
+    "description": "Keychain made with Resin.",
+    "image": "uploads/20250525200524_ResinArt.png"
+  }
+},
+{
+  "model": "shop.subcategory",
+  "pk": 12,
+  "fields": {
+    "category": 2,
+    "name": "Resin Frames",
+    "slug": "resin-frames",
+    "description": "Frames regarding to their sizes and shapes",
+    "image": "uploads/20250525200505_ResinArt.png"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "subcategory": 1,
+    "name": "Birthday Calendar Hoop - Classic Wooden Charm",
+    "slug": "birthday-calendar-hoop-classic-wooden-charm",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502162635_BirthdayCalendarHoop-1.jpg",
+    "quantity": 1,
+    "original_price": 599.0,
+    "selling_price": 499.0,
+    "description": "A beautifully\r\n handcrafted\r\n Birthday\r\n Calendar Hoop\r\n designed with\r\n soft pastel\r\n shades and\r\n neatly arranged\r\n hanging discs.\r\n Each disc\r\n represents a\r\n loved one's\r\n birthday. Just\r\n write their name\r\n and date, and\r\n never miss a\r\n special day\r\n again!\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T10:56:35.980Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "subcategory": 1,
+    "name": "Birthday Calendar Hoop - Floral Frame Delight",
+    "slug": "birthday-calendar-hoop-floral-frame-delight",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502162753_BirthdayCalendarHoop-2.jpg",
+    "quantity": 1,
+    "original_price": 699.0,
+    "selling_price": 549.0,
+    "description": "This stylish\r\n Birthday\r\n Reminder Hoop\r\n features a lovely\r\n floral-themed\r\n design with mini\r\n wooden tags\r\n hanging below. A\r\n charming and\r\n practical way to\r\n remember\r\n friends’ and\r\n family birthdays!\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T10:57:53.792Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "subcategory": 1,
+    "name": "Birthday Calendar Hoop - Minimalist Modern Design",
+    "slug": "birthday-calendar-hoop-minimalist-modern-design",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502162902_BirthdayCalendarHoop-3.webp",
+    "quantity": 1,
+    "original_price": 499.0,
+    "selling_price": 349.0,
+    "description": "Celebrate every\r\n birthday with\r\n this cute and\r\n colorful Birthday\r\n Calendar Hoop!\r\n It comes with\r\n hand-painted\r\n elements and\r\n neatly arranged\r\n tags for each\r\n month. Simply\r\n add names and\r\n dates to keep\r\n your\r\n celebrations\r\n organized all\r\n year round.\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T10:59:02.306Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "subcategory": 1,
+    "name": "Birthday Calendar Hoop - Boho Vibe Edition",
+    "slug": "birthday-calendar-hoop-boho-vibe-edition",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502163019_BirthdayCalendarHoop-4.webp",
+    "quantity": 1,
+    "original_price": 599.0,
+    "selling_price": 499.0,
+    "description": "A modern and\r\n elegant Birthday\r\n Calendar Hoop\r\n crafted with\r\n love. Featuring\r\n neutral tones\r\n and minimalistic\r\n design, it suits\r\n any home décor\r\n style. Write\r\n down birthdays\r\n on the little\r\n wooden tags and\r\n enjoy a\r\n personalized\r\n memory corner\r\n for your loved\r\n ones.\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:00:19.054Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 5,
+  "fields": {
+    "subcategory": 1,
+    "name": "Birthday Calendar Hoop - Pastel Dreams",
+    "slug": "birthday-calendar-hoop-pastel-dreams",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502163101_BirthdayCalendarHoop-5.jpeg",
+    "quantity": 1,
+    "original_price": 699.0,
+    "selling_price": 599.0,
+    "description": "Brighten up your\r\n space with this\r\n adorable\r\n Birthday\r\n Calendar Hoop!\r\n Designed with\r\n colorful patterns\r\n and playful\r\n vibes, it’s both a\r\n décor piece and\r\n a practical\r\n birthday tracker.\r\n Hang it proudly\r\n and stay\r\n connected with\r\n your loved ones'\r\n special days!\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:01:01.077Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 6,
+  "fields": {
+    "subcategory": 2,
+    "name": "Birthday Hoop (Swing Design)",
+    "slug": "birthday-hoop-swing-design",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502163308_BirthdayHoops-1.webp",
+    "quantity": 1,
+    "original_price": 499.0,
+    "selling_price": 399.0,
+    "description": "This beautiful\r\n handmade\r\n birthday hoop\r\n features a girl\r\n sitting on a\r\n swing  surrounded by\r\n vibrant\r\n embroidered\r\n flowers.\r\n Decorated with a\r\n pearl border and\r\n a cute bow on\r\n top, it makes a\r\n lovely\r\n personalized\r\n birthday gift.\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": true,
+    "created_at": "2025-05-02T11:03:08.880Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 7,
+  "fields": {
+    "subcategory": 2,
+    "name": "Birthday Hoop (Floral Field Design)",
+    "slug": "birthday-hoop-floral-field-design",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502163353_BirthdayHoops-2.jpg",
+    "quantity": 1,
+    "original_price": 499.0,
+    "selling_price": 399.0,
+    "description": "Celebrate\r\n birthdays with\r\n this charming\r\n hoop, showing a\r\n girl with a soft\r\n fabric dress\r\n standing in a\r\n field of\r\n embroidered\r\n daisies. The\r\n background is\r\n hand-painted,\r\n giving it a fresh\r\n and dreamy look\r\n — perfect for\r\n heartfelt gifting!\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:03:53.041Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 8,
+  "fields": {
+    "subcategory": 2,
+    "name": "Home Decor Embroidery Hoops",
+    "slug": "home-decor-embroidery-hoops",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502163549_HomeDecorHoop.png",
+    "quantity": 1,
+    "original_price": 699.0,
+    "selling_price": 399.0,
+    "description": "Bring a touch of\r\n spring indoors\r\n with this\r\n delightful\r\n embroidered\r\n wall hanging,\r\n featuring a\r\n meticulously\r\n stitched basket\r\n brimming with\r\n colorful flowers\r\n and two sweet\r\n butterflies,\r\n presented in a\r\n classic round\r\n embroidery\r\n hoop.\r\n Please note :\r\n Every hoop is uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:05:49.779Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 9,
+  "fields": {
+    "subcategory": 3,
+    "name": "Personalized Spotify Song Wedding Hoop",
+    "slug": "personalized-spotify-song-wedding-hoop",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250526131629_SpotifyWeddingHoops.webp",
+    "quantity": 1,
+    "original_price": 649.0,
+    "selling_price": 549.0,
+    "description": "This handcrafted embroidery\r\n features a\r\n romantic couple\r\n design, floral\r\n decorations, and\r\n your names\r\n stitched with\r\n love. It also\r\n includes a\r\n custom Spotify\r\n code that plays\r\n your favorite\r\n song when\r\n scanned —\r\n making it a\r\n perfect gift for\r\n weddings,\r\n anniversaries, or\r\n special days.\r\n\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and\r\n design patterns\r\n may vary.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:09:23.158Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 10,
+  "fields": {
+    "subcategory": 3,
+    "name": "Romantic Wedding Couple Embroidery Hoop",
+    "slug": "romantic-wedding-couple-embroidery-hoop",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250526131653_WeddingHoop-1.jpg",
+    "quantity": 1,
+    "original_price": 599.0,
+    "selling_price": 499.0,
+    "description": "Celebrate the magic of your big day with this elegant 3D embroidered\r\n hoop art! Featuring a\r\n lovingly detailed bride and groom,complete with a flowing real fabric dress, and delicate hand stitched florals.\r\n Personalized with names and wedding dates, this piece is a timeless memory of your special moment\r\n — perfect for wedding décor,gifts, or home \r\ndisplay.\r\n Please note :Every hoop is\r\n uniquely crafted,so colors and design patterns may vary as each hoop adds\r\n a unique",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:12:33.550Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 11,
+  "fields": {
+    "subcategory": 3,
+    "name": "Personalized Wedding Date Calendar Hoop",
+    "slug": "personalized-wedding-date-calendar-hoop",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250526131710_WeddingHoop-2.webp",
+    "quantity": 1,
+    "original_price": 599.0,
+    "selling_price": 499.0,
+    "description": "Mark your special day\r\n Beautifully! This hand embroidered calendar hoop highlights your\r\n wedding month with a little heart on your special\r\ndate.Surrounded by soft floral designs and customized with your names, this sweet keepsake is a lovely gift for weddings,  anniversaries, or engagement celebrations —simple,charming, and  full of love.\r\nPlease note :Every hoop is\r\nuniquely crafted, so colors and design patterns may vary as each hoop adds a unique touch.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:15:44.068Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 12,
+  "fields": {
+    "subcategory": 4,
+    "name": "Couple Wedding Hoop Art",
+    "slug": "couple-wedding-hoop-art",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502164946_AnniversaryHoop-2.png",
+    "quantity": 1,
+    "original_price": 599.0,
+    "selling_price": 499.0,
+    "description": "Made with colorful thread\r\nembroidery,fabric, and\r\ndelicate lace, it captures a bride and groom holding hands under a floral arch. Perfect for wedding gifts,\r\nanniversary surprises, or\r\neven as a wall decor piece for your home.Personalize it with names and dates to make it even more\r\nspecial!\r\nCustomization: Names & Special Date can be added.\r\nPlease note :Every hoop is\r\nuniquely crafted,so colors and design patterns may vary as each hoop adds\r\na unique touch.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:19:46.252Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 13,
+  "fields": {
+    "subcategory": 4,
+    "name": "Anniversary Embroidery Frame",
+    "slug": "anniversary-embroidery-frame",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502165032_AnniversaryHoops-1.webp",
+    "quantity": 1,
+    "original_price": 399.0,
+    "selling_price": 299.0,
+    "description": "This Anniversary\r\n Embroidery\r\n Frame features a\r\n hand-stitched\r\n silhouette of a\r\n couple,\r\n surrounded by\r\n beautiful floral\r\n embroidery and\r\n detailed\r\n decorations.\r\n Personalize it\r\n with names and\r\n an important\r\n date to create a\r\n forever\r\n keepsake!\r\n  Customization:\r\n Couple’s Names\r\n & Date included.\r\n Please note :\r\n Every hoop is\r\n uniquely crafted,\r\n so colors and  design patterns\r\n may vary as\r\n each hoop adds\r\n a unique touch\r\n to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:20:32.927Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 14,
+  "fields": {
+    "subcategory": 5,
+    "name": "Butterfly Charm Bracelets",
+    "slug": "butterfly-charm-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502165354_butterflycharmbracelets.jpeg",
+    "quantity": 1,
+    "original_price": 89.0,
+    "selling_price": 49.0,
+    "description": "Delicate and stylish, these\r\nbutterfly charm bracelets bring a touch of nature\r\nto your everyday look. Lightweight and adjustable, they’re perfect\r\n for adding a soft, graceful vibe to any outfit. Kind Reminder: Every\r\nhandcrafted carries its own unique charm, with slight variations in color and\r\nbeadwork.",
+    "status": false,
+    "trending": true,
+    "created_at": "2025-05-02T11:23:54.640Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 15,
+  "fields": {
+    "subcategory": 5,
+    "name": "Crystal Beads Bracelets",
+    "slug": "crystal-beads-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502165448_CrystalBeadsBracelets-1.webp",
+    "quantity": 3,
+    "original_price": 199.0,
+    "selling_price": 120.0,
+    "description": "Shiny and\r\n colorful, these\r\n crystal bead\r\n bracelets sparkle\r\n beautifully under\r\n the light. Made\r\n with high-quality\r\n crystals, they\r\n are easy to wear\r\n daily or on\r\n special\r\n occasions to add\r\n a pop of charm\r\n and elegance.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n bracelet carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:24:48.170Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 16,
+  "fields": {
+    "subcategory": 5,
+    "name": "Green Bracelets",
+    "slug": "green-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502165557_greenbracelets.jpg",
+    "quantity": 1,
+    "original_price": 99.0,
+    "selling_price": 69.0,
+    "description": "Simple yet eye\r\ncatching, these\r\n green-toned\r\n bracelets offer a\r\n fresh and earthy\r\n feel. Perfect for\r\n nature lovers or\r\n anyone who\r\n enjoys a calm,\r\n soothing style on\r\n their wrist\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n bracelet carries\r\n its own unique\r\n charm, with\r\n slight variations in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:25:57.268Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 17,
+  "fields": {
+    "subcategory": 5,
+    "name": "Metal Charms Bracelets",
+    "slug": "metal-charms-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502165714_7bf64701-5dc1-444a-bcd9-metalcharmsbracelets.webp",
+    "quantity": 1,
+    "original_price": 149.0,
+    "selling_price": 99.0,
+    "description": "Trendy and cool,\r\n these metal\r\n charm bracelets\r\n feature fun\r\n designs and\r\n symbols. They\r\n add a bold and\r\n stylish touch to\r\n your look,\r\n whether worn\r\n alone or stacked\r\n with other\r\n bracelets.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n bracelet carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:27:14.796Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 18,
+  "fields": {
+    "subcategory": 5,
+    "name": "Star and Moon Bracelets",
+    "slug": "star-and-moon-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502165753_starmoonbracelets.webp",
+    "quantity": 2,
+    "original_price": 149.0,
+    "selling_price": 79.0,
+    "description": "Dreamy and\r\n magical, these\r\n star and moon\r\n bracelets\r\n capture the\r\n beauty of the\r\n night sky.\r\n Lightweight and\r\n easy to wear,\r\n they’re great for\r\n anyone who\r\n loves celestial\r\n designs and a\r\n touch of sparkle.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n bracelet carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:27:53.435Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 19,
+  "fields": {
+    "subcategory": 5,
+    "name": "Black and White Couple Bracelets",
+    "slug": "black-and-white-couple-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502165852_bwcouplebracelets.jpg",
+    "quantity": 2,
+    "original_price": 159.0,
+    "selling_price": 89.0,
+    "description": "These black and\r\n white couple\r\n bracelets\r\n symbolize\r\n connection and\r\n balance. Made\r\n for couples,\r\n friends, or\r\n anyone close to\r\n your heart, they\r\n are a simple yet\r\n meaningful way\r\n to stay\r\n connected.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n bracelet carries\r\n its own unique\r\n charm, with  slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:28:52.967Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 20,
+  "fields": {
+    "subcategory": 5,
+    "name": "Duo Shell Bracelets",
+    "slug": "duo-shell-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502165931_duoshellbracelets.webp",
+    "quantity": 2,
+    "original_price": 149.0,
+    "selling_price": 89.0,
+    "description": "Inspired by the\r\n beach, these duo\r\n shell bracelets\r\n feature beautiful\r\n natural shells.\r\n Perfect for\r\n summer outfits\r\n or bringing a bit\r\n of ocean magic\r\n to your day, they\r\n are both cute\r\n and comfortable\r\n to wear.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n bracelet carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:29:31.724Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 21,
+  "fields": {
+    "subcategory": 5,
+    "name": "Tri panda Bracelets",
+    "slug": "tri-panda-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502170019_tripandabracelets.jpg",
+    "quantity": 3,
+    "original_price": 249.0,
+    "selling_price": 139.0,
+    "description": "Fun and colorful,\r\n the Tripanda\r\n bracelets are all\r\n about vibrant\r\n vibes and\r\n happiness. With\r\n a mix of colors\r\n and playful\r\n designs, they’re\r\n perfect for\r\n adding a lively\r\n and cheerful\r\n touch to your\r\n look.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n bracelet carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:30:19.115Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 22,
+  "fields": {
+    "subcategory": 5,
+    "name": "Matte finished Bracelets",
+    "slug": "matte-finished-bracelets",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502170113_tricombobracelets.webp",
+    "quantity": 3,
+    "original_price": 199.0,
+    "selling_price": 129.0,
+    "description": "Fun and colorful,\r\n the triple\r\n charmed\r\n bracelets are all\r\n about vibrant\r\n vibes and\r\n happiness. With\r\n a mix of colors\r\n and playful\r\n designs, they’re\r\n perfect for\r\n adding a lively\r\n and cheerful\r\n touch to your\r\n look.\r\n Kind Reminder:\r\n Every\r\n handcrafted bracelet carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:31:13.351Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 23,
+  "fields": {
+    "subcategory": 6,
+    "name": "Pearl Keychain",
+    "slug": "pearl-keychain",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502170303_beadedkeychain.jpg",
+    "quantity": 1,
+    "original_price": 99.0,
+    "selling_price": 59.0,
+    "description": "This\r\n personalized\r\n keychain allows\r\n you to make it\r\n uniquely yours\r\n with its\r\n combination of\r\n beautiful\r\n crystals, a\r\n stylishly beaded\r\n custom name\r\n charm, and a\r\n cute butterfly, all\r\n while offering\r\n the security of a\r\n sturdy keyring\r\n and clasp.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n Keychain carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:33:03.629Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 24,
+  "fields": {
+    "subcategory": 6,
+    "name": "Pearl Key Chain with Charms",
+    "slug": "pearl-key-chain-with-charms",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502170347_pearlkeychain-1.webp",
+    "quantity": 1,
+    "original_price": 109.0,
+    "selling_price": 69.0,
+    "description": "Adorn your\r\n belongings with\r\n this stylish pearl\r\n keychain,\r\n featuring a string\r\n of classic pearls,\r\n complemented\r\n by two flower\r\n charms,\r\n suspended from\r\n a sturdy, golden\r\ntoned clasp.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n Keychain carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:33:47.127Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 25,
+  "fields": {
+    "subcategory": 6,
+    "name": "Beads Key Chain with flower hangings",
+    "slug": "beads-key-chain-with-flower-hangings",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502170503_beadskeychain.webp",
+    "quantity": 1,
+    "original_price": 79.0,
+    "selling_price": 49.0,
+    "description": "This unique\r\n keychain lets\r\n you carry your\r\n name in a stylish\r\n way, featuring\r\n alphabet beads,\r\n a lovely purple\r\n gem, a butterfly\r\n detail, and a\r\n heart charm, all\r\n securely\r\n attached with a\r\n golden heart\r\nshaped clasp. Kind Reminder:\r\n Every\r\n handcrafted\r\n Keychain carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\nbeadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:35:03.469Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 26,
+  "fields": {
+    "subcategory": 6,
+    "name": "Round pearl Key Chain",
+    "slug": "round-pearl-key-chain",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502170656_beadedkeychain.jpg",
+    "quantity": 1,
+    "original_price": 79.0,
+    "selling_price": 59.0,
+    "description": "Add a touch of\r\n flair to your\r\n belongings with\r\n this delightful\r\n keychain,\r\n featuring a circle\r\n of classic beads,\r\n complemented\r\n by a cute bow,\r\n suspended from\r\n a sturdy, silver\r\ntoned clasp.\r\n  Kind Reminder:\r\n Every\r\n handcrafted\r\n Keychain carries\r\n its own unique\r\n charm, with\r\n slight variations\r\n in color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:36:56.277Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 27,
+  "fields": {
+    "subcategory": 7,
+    "name": "Pearl with Bow Phone Charm",
+    "slug": "pearl-with-bow-phone-charm",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502170927_beadedcharms.jpg",
+    "quantity": 1,
+    "original_price": 79.0,
+    "selling_price": 59.0,
+    "description": "Add a touch of\r\n sweetness to\r\n your phone with\r\n this delightful\r\n charm, featuring\r\n a string of\r\n classic beads,\r\n punctuated by\r\n two cute bow\r\n embellishments,\r\n and easily\r\n attached with a\r\n secure loop.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n phone charm\r\n carries its own\r\n unique charm,\r\n with slight\r\n variations in\r\n color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:39:27.883Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 28,
+  "fields": {
+    "subcategory": 7,
+    "name": "Pearl Butterfly Phone Charm",
+    "slug": "pearl-butterfly-phone-charm",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502171027_pearlbutterflycharm.jpg",
+    "quantity": 1,
+    "original_price": 79.0,
+    "selling_price": 55.0,
+    "description": "Add a unique\r\n touch to your\r\n phone with this\r\n stylish charm,\r\n featuring a string\r\n of classic pearls\r\n and shimmering\r\n green beads,\r\n beautifully\r\n complemented\r\n by a vibrant\r\n green butterfly\r\n and easily\r\n attached with a\r\n secure loop.\r\n Kind Reminder:\r\n Every\r\n handcrafted\r\n Phone Charm\r\n carries its own unique charm,\r\n with slight\r\n variations in\r\n color and\r\n beadwork.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:40:27.857Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 29,
+  "fields": {
+    "subcategory": 8,
+    "name": "Butterfly Note Book",
+    "slug": "butterfly-note-book",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502171301_butterflynote.webp",
+    "quantity": 1,
+    "original_price": 99.0,
+    "selling_price": 79.0,
+    "description": "Write down your\r\n ideas in this\r\n exquisite\r\n hardbound\r\n notebook,\r\n adorned with a\r\n detailed\r\n embroidered\r\n butterfly and\r\n lovely floral\r\n accents on a\r\n tactile cover,\r\n making it a\r\n delightful\r\n companion for\r\n your daily\r\nmusings.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:43:02.093Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 30,
+  "fields": {
+    "subcategory": 8,
+    "name": "Floral Note Book",
+    "slug": "floral-note-book",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502171421_floralnote.webp",
+    "quantity": 1,
+    "original_price": 159.0,
+    "selling_price": 109.0,
+    "description": "Jot down your\r\n thoughts and\r\n plans in this\r\n inspiring A5\r\n notebook,\r\n adorned with a\r\n cheerful floral\r\n and insect\r\n design, complete\r\n with the\r\n empowering text\r\n \"Dream Big, Set\r\n Goals, Take\r\n Action,\" and\r\n featuring a\r\n convenient\r\n yellow spine.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:44:21.258Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 31,
+  "fields": {
+    "subcategory": 8,
+    "name": "Goat Printed Combo Note",
+    "slug": "goat-printed-combo-note",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502171539_goatnote.webp",
+    "quantity": 3,
+    "original_price": 499.0,
+    "selling_price": 299.0,
+    "description": "This adorable set\r\n includes four\r\n notebooks with\r\n different pastel\r\ncolored covers,\r\n each adorned\r\n with a whimsical\r\n unicorn and star\r\n design, and\r\n finished with a\r\n secure and easy\r\nto-use magnetic\r\n buckle.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:45:39.977Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 32,
+  "fields": {
+    "subcategory": 8,
+    "name": "Unicorn Note Book",
+    "slug": "unicorn-note-book",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502171629_unicornnote.webp",
+    "quantity": 4,
+    "original_price": 599.0,
+    "selling_price": 499.0,
+    "description": "This adorable set\r\n includes four\r\n notebooks with\r\n different pastel\r\ncolored covers,\r\n each adorned\r\n with a whimsical\r\n unicorn and star\r\n design, and\r\n finished with a\r\n secure and easy\r\nto-use magnetic\r\n buckle.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:46:29.848Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 33,
+  "fields": {
+    "subcategory": 9,
+    "name": "White Book Mark",
+    "slug": "white-book-mark",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502171854_whitebookmark.jpg",
+    "quantity": 5,
+    "original_price": 89.0,
+    "selling_price": 49.0,
+    "description": "Add a literary\r\n touch to your\r\n reading with this\r\n bookmark,\r\n featuring the\r\n delightful words\r\n of Dr. Seuss,\r\n \"You can find\r\n magic wherever\r\n you look, sit\r\n back & relax, all\r\n you need is a\r\n book!\",\r\n accompanied by\r\n a colorful stack\r\n of books and a\r\n soft ribbon.\r\n\r\n Kind Reminder:\r\n Every piece\r\n Book Mark carries\r\n its own unique\r\n designs, with\r\n slight variations\r\n in color.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:48:54.780Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 34,
+  "fields": {
+    "subcategory": 9,
+    "name": "Black Unicorn Book Mark",
+    "slug": "black-unicorn-book-mark",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502172012_unicornbookmark-1.webp",
+    "quantity": 5,
+    "original_price": 69.0,
+    "selling_price": 39.0,
+    "description": "Add a touch of\r\n wonder to your\r\n reading with this\r\n striking\r\n bookmark,\r\n featuring a\r\n serene unicorn\r\n within a\r\n scalloped frame\r\n above an open\r\n book with\r\n twinkling stars,\r\n emphasized by\r\n the bold\r\n \"Reading is\r\n Magical!\" text on\r\n a sleek black\r\n backdrop.\r\n Kind Reminder:\r\n Every piece\r\n BookMark carries\r\n its own unique\r\n designs, with\r\n slight variations\r\n in color.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:50:12.382Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 35,
+  "fields": {
+    "subcategory": 9,
+    "name": "Floral Book Mark",
+    "slug": "floral-book-mark",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502172122_floralbookmark.jpg",
+    "quantity": 5,
+    "original_price": 79.0,
+    "selling_price": 39.0,
+    "description": "This set of three\r\n \"Ever Upward\r\n Florals\"\r\n magnetic\r\n bookmarks\r\n provides a\r\n practical and\r\n delightful way to\r\n save your spot,\r\n featuring three\r\n distinct and\r\n colorful floral\r\n illustrations in\r\n vases, ensuring\r\n your bookmarks\r\n stay put with\r\n their magnetic\r\nclosure.\r\nKind Reminder:\r\n Every piece\r\n Book Mark carries\r\n its own unique\r\n designs, with\r\n slight variations\r\n in color.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:51:22.306Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 36,
+  "fields": {
+    "subcategory": 9,
+    "name": "Combo Book Marks",
+    "slug": "combo-book-marks",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502172248_combobookmark.webp",
+    "quantity": 4,
+    "original_price": 99.0,
+    "selling_price": 49.0,
+    "description": "This delightful\r\n set of magnetic\r\n bookmarks\r\n combines your\r\n love for dogs\r\n and reading,\r\n featuring various\r\n charming dog  illustrations\r\n paired with\r\n encouraging\r\n phrases,\r\n providing a\r\n secure and\r\n heartwarming\r\n way to mark\r\n your pages.\r\n Kind Reminder:\r\n Every piece\r\n Book Mark carries\r\n its own unique\r\n design, with\r\n slight variations\r\n in color.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:52:48.132Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 37,
+  "fields": {
+    "subcategory": 9,
+    "name": "Unicorn Book Mark",
+    "slug": "unicorn-book-mark",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502172529_unicornbookmark-2.jpg",
+    "quantity": 4,
+    "original_price": 69.0,
+    "selling_price": 39.0,
+    "description": "Keep your spot\r\n in style with this\r\n enchanting\r\n bookmark,\r\n featuring an\r\n adorable unicorn\r\n enjoying a book\r\n on a rainbow,\r\n sparkling stars,\r\n and the magical\r\n phrase \"Reading\r\n is Magical\" on a\r\n vibrant purple\r\n backdrop,\r\n finished with a\r\n lovely purple\r\ntassel. Kind Reminder:\r\n Every piece\r\n BookMark carries\r\n its own unique\r\n designs, with\r\n slight variations\r\n in color.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T11:55:29.605Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 38,
+  "fields": {
+    "subcategory": 10,
+    "name": "Personalized Floral Frame with White Border",
+    "slug": "personalized-floral-frame-with-white-border",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502173112_coupledoubleframe.jfif",
+    "quantity": 1,
+    "original_price": 999.0,
+    "selling_price": 799.0,
+    "description": "Celebrate yourspecial day with this elegant personalized frame, crafted using your\r\n preserved wedding flowers. Perfect for anniversaries or wedding keepsakes.\r\nCustomization: Names, flowers,photo layout and\r\n size of the frame. Reagarding to the\r\n customization the price may vary.\r\nKind Reminder:Each resin frame is uniquely handcrafted using preserved flowers, so slight variations in\r\nfloral arrangement,\r\ncolors, and design may\r\noccur—adding a one-of-a-kind charm to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T12:01:12.841Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 39,
+  "fields": {
+    "subcategory": 10,
+    "name": "Double Photo Floral Frame with Pearl Detailing",
+    "slug": "double-photo-floral-frame-with-pearl-detailing",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502173406_dipicframe.webp",
+    "quantity": 1,
+    "original_price": 1599.0,
+    "selling_price": 1299.0,
+    "description": "Keep two cherished\r\nmoments alive in one frame! This rectangular\r\nThe double photo frame is decorated with preserved rose petals, pearls, and golden beads. Ideal for\r\nshowcasing wedding or\r\nengagement photos side by side.\r\nCustomization: Names, flowers, photo layout and\r\n frame size.\r\n Kind Reminder:\r\n Each resin frame\r\n is uniquely\r\n handcrafted using preserved flowers, so slight variations in\r\n floral arrangement,\r\n colors, and design may\r\n occur—adding a one-of-a-kind charm to every piece.",
+    "status": false,
+    "trending": true,
+    "created_at": "2025-05-02T12:04:06.061Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 40,
+  "fields": {
+    "subcategory": 10,
+    "name": "Floral Keepsake Frame – Classic White Border",
+    "slug": "floral-keepsake-frame-classic-white-border",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250526142114_doubleframe.jfif",
+    "quantity": 1,
+    "original_price": 1299.0,
+    "selling_price": 999.0,
+    "description": "This frame features  a central photo bordered with dried wedding flowers in various shades. The couple’s names and\r\nspecial date are added in golden lettering, making\r\n it an emotional and timeless keepsake.\r\nCustomization: Names, flowers, photo layout, and frame size. Kind Reminder:\r\nEach resin frame is uniquely handcrafted using preserved flowers, so slight variations in floral arrangement, colors, and\r\ndesign may occur—adding a one-of-a-kind charm to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T12:07:07.854Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 41,
+  "fields": {
+    "subcategory": 11,
+    "name": "Initial Pearl Resin Keychain",
+    "slug": "initial-pearl-resin-keychain",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502174043_initialkeychain-2.webp",
+    "quantity": 1,
+    "original_price": 99.0,
+    "selling_price": 49.0,
+    "description": "This keychain features a beautifully crafted resin letter charm paired with a stylish pearl loop. Each piece is handmade with dried flowers and gold\r\nflakes, giving it a unique and classy look. Add your name or initial to make it truly yours.\r\nCustomization: Names, flowers, and size.\r\nKind Reminder: Each resin keychain is uniquely handcrafted using preserved flowers, so slight variations in floral arrangement, colors, and design may occur—adding a one-of-a-kind.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T12:10:43.657Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 42,
+  "fields": {
+    "subcategory": 11,
+    "name": "Multi-Charm Yellow Resin Keychain",
+    "slug": "multi-charm-yellow-resin-keychain",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502174314_multikeychain.jfif",
+    "quantity": 1,
+    "original_price": 129.0,
+    "selling_price": 89.0,
+    "description": "This yellow resin keychain comes with multiple\r\nadorable charms: a heart,\r\nflower, leaf, and personalized name tag made\r\nwith real sunflowers.\r\nPerfect for gifting or brightening up your bag or keys.\r\nCustomization: Names, flowers, and size.\r\nKind Reminder: Each resin keychain is uniquely handcrafted using preserved flowers, so slight variations in floral\r\nArrangement, colors, and design may occur—adding a one-of-a-kind.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T12:13:14.317Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 43,
+  "fields": {
+    "subcategory": 11,
+    "name": "Rectangle Floral Resin Keychain",
+    "slug": "rectangle-floral-resin-keychain",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502174532_rectanglekeychain.webp",
+    "quantity": 1,
+    "original_price": 89.0,
+    "selling_price": 39.0,
+    "description": "A rectangular resin charm featuring tiny pressed flowers and a gentle sprinkle of glitter. Finished with a silky tassel, this design gives a soft, nature\r\ninspired touch that’s both elegant and lightweight.\r\nCustomization:Names,flowers and size Kind Reminder: Each resin key chain is uniquely handcrafted using preserved flowers, so slight variations in floral arrangement, colors, and design may occur—adding a one-of-a-kind.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T12:15:32.794Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 44,
+  "fields": {
+    "subcategory": 11,
+    "name": "Drive Safe Round Resin Keychain",
+    "slug": "drive-safe-round-resin-keychain",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502174705_drivesafekeychain.jpg",
+    "quantity": 1,
+    "original_price": 99.0,
+    "selling_price": 59.0,
+    "description": "A round resin keychain with the words “Drive Safe” embedded in gold foil accents. This piece is a meaningful gift for loved ones to carry with them as a daily reminder to stay safe on the road. Customization: Names, flowers and size.\r\n Kind Reminder: Each resin key chain is uniquely handcrafted using preserved flowers, so slight variations in floral arrangement, colors, and design may occur—adding a one-of-a-kind.",
+    "status": false,
+    "trending": true,
+    "created_at": "2025-05-02T12:17:05.627Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 45,
+  "fields": {
+    "subcategory": 11,
+    "name": "Botanical Initial Resin Keychain",
+    "slug": "botanical-initial-resin-keychain",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250526142317_initialkeychain.jpg",
+    "quantity": 1,
+    "original_price": 149.0,
+    "selling_price": 119.0,
+    "description": "This double charm keychain combines initials\r\n and round tags filled with real botanicals, sparkles, and motivational quotes like “You are Different”\r\n and “Tap into  your magic.” A sweet gift that inspires and delights.\r\nCustomization: Names, flowers and size.\r\n Kind Reminder:  Each resin key chain is uniquely\r\nhandcrafted using preserved flowers, so slight variations in floral arrangement, colors, and\r\ndesign may occur—adding a one-of-a-kind.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T12:19:44.435Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 46,
+  "fields": {
+    "subcategory": 12,
+    "name": "Couple Resin Art Frame",
+    "slug": "couple-resin-art-frame",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502175207_coupleframe.jpeg",
+    "quantity": 1,
+    "original_price": 2999.0,
+    "selling_price": 1599.0,
+    "description": "Display your treasured photo in this exquisite resin art frame, where your picture is artfully embedded in clear resin alongside delicate accents, all contained within a stylish wooden frame creating a personalized\r\nkeepsake.\r\nCustomization:\r\n Names, flowers,\r\n photo layout and\r\n frame size\r\n Kind Reminder: Each resin frame is uniquely handcrafted using preserved flowers, so slight variations in floral arrangement, colors, and design may occur—adding a one-of-a-kind charm",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T12:22:07.982Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 47,
+  "fields": {
+    "subcategory": 12,
+    "name": "Round Baby Resin Art Frame",
+    "slug": "round-baby-resin-art-frame",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250502181504_roundbabyframe.jpg",
+    "quantity": 1,
+    "original_price": 999.0,
+    "selling_price": 599.0,
+    "description": "Immortalize your baby's birth details with this personalized resin art plaque, featuring their name, date, time, weight, blood type, and three charming photos,\r\nbeautifully encased in resin with decorative accents and presented on a stand for display.\r\nCustomization: Names, flowers, photo layout and frame size Kind Reminder: Each resin frame  is uniquely handcrafted using preserved flowers, so slight variations in floral\r\narrangement, colors, and\r\ndesign may occur—adding a one-of-a-kind charm.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-02T12:45:04.890Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 48,
+  "fields": {
+    "subcategory": 12,
+    "name": "Couple Round Rose Frame",
+    "slug": "couple-round-rose-frame",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250514220412_roundframe.webp",
+    "quantity": 1,
+    "original_price": 999.0,
+    "selling_price": 699.0,
+    "description": "Display your cherished photo in this exquisite round resin art frame, where your picture is artfully set in resin alongside real preserved flower petals, personalized with names and a significant date, and elegantly displayed on a stand.\r\nCustomization: Names, flowers, photo layout and frame size.\r\nKind Reminder: Each resin frame is uniquely handcrafted using preserved flowers, so slight variations in floral arrangement, colors, and design may occur—adding a one-of-a-kind charm to every piece.",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-14T16:34:12.569Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 49,
+  "fields": {
+    "subcategory": 12,
+    "name": "Wedding Round Frame",
+    "slug": "wedding-round-frame",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250514220659_roundframe-2.webp",
+    "quantity": 1,
+    "original_price": 999.0,
+    "selling_price": 699.0,
+    "description": "Showcase your treasured photo in this exquisite round resin art frame, where your picture is artfully set in resin alongside real floral pieces and shimmering pearls, personalized with names and a memorable date, and elegantly displayed on a stand.\r\nCustomization: Names, flowers, photo layout and frame size.\r\nKind Reminder: Each resin frame is uniquely handcrafted using preserved flowers, so slight variations in floral arrangement, colors, and design may occur—adding a one-of-a-kind charm",
+    "status": false,
+    "trending": false,
+    "created_at": "2025-05-14T16:36:59.260Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 50,
+  "fields": {
+    "subcategory": 12,
+    "name": "Wedding Gift Resin Art Frame",
+    "slug": "wedding-gift-resin-art-frame",
+    "vendor": "Whoops!",
+    "product_image": "uploads/20250514220859_speareframe.webp",
+    "quantity": 1,
+    "original_price": 1299.0,
+    "selling_price": 999.0,
+    "description": "Showcase your treasured picture in this exquisite resin art frame, designed with a stylish agate-like border and adorned with subtle floral embellishments, personalized with names, a memorable date, and the enduring sentiment Forever, all presented on a graceful stand.\r\nCustomization: names, flowers, photo layout, and frame size.\r\nKind Reminder: Each resin frame is uniquely handcrafted using preserved flowers, so slight variations in floral arrangement, colors, and design may occur.",
+    "status": false,
+    "trending": true,
+    "created_at": "2025-05-14T16:38:59.068Z"
+  }
+},
+{
+  "model": "shop.cart",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "product": 22,
+    "product_qty": 1,
+    "created_at": "2025-07-03T15:00:23.608Z"
+  }
+},
+{
+  "model": "shop.cart",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "product": 28,
+    "product_qty": 1,
+    "created_at": "2025-07-05T14:43:38.280Z"
+  }
+},
+{
+  "model": "shop.cart",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "product": 12,
+    "product_qty": 1,
+    "created_at": "2025-07-05T17:10:34.503Z"
+  }
+},
+{
+  "model": "shop.cart",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "product": 47,
+    "product_qty": 1,
+    "created_at": "2025-07-05T17:30:12.285Z"
+  }
+},
+{
+  "model": "shop.cart",
+  "pk": 13,
+  "fields": {
+    "user": 1,
+    "product": 6,
+    "product_qty": 1,
+    "created_at": "2025-07-06T10:16:41.957Z"
+  }
+},
+{
+  "model": "shop.cart",
+  "pk": 14,
+  "fields": {
+    "user": 1,
+    "product": 44,
+    "product_qty": 1,
+    "created_at": "2025-07-06T10:29:29.270Z"
+  }
+},
+{
+  "model": "shop.cart",
+  "pk": 15,
+  "fields": {
+    "user": 1,
+    "product": 42,
+    "product_qty": 1,
+    "created_at": "2025-11-03T07:35:01.734Z"
+  }
+},
+{
+  "model": "shop.cart",
+  "pk": 16,
+  "fields": {
+    "user": 1,
+    "product": 34,
+    "product_qty": 1,
+    "created_at": "2025-11-26T07:39:39.068Z"
+  }
+},
+{
+  "model": "shop.wishlist_fav",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "product": 12,
+    "created_at": "2025-07-05T17:10:31.075Z"
+  }
+},
+{
+  "model": "shop.wishlist_fav",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "product": 47,
+    "created_at": "2025-07-05T17:29:59.595Z"
+  }
+},
+{
+  "model": "shop.wishlist_fav",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "product": 42,
+    "created_at": "2025-07-05T17:30:44.027Z"
+  }
+},
+{
+  "model": "shop.wishlist_fav",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "product": 1,
+    "created_at": "2025-07-06T09:43:23.534Z"
+  }
+},
+{
+  "model": "shop.wishlist_fav",
+  "pk": 6,
+  "fields": {
+    "user": 1,
+    "product": 14,
+    "created_at": "2025-07-06T09:53:22.387Z"
+  }
+},
+{
+  "model": "shop.wishlist_fav",
+  "pk": 8,
+  "fields": {
+    "user": 1,
+    "product": 6,
+    "created_at": "2025-07-06T10:16:28.137Z"
+  }
+},
+{
+  "model": "orders.shippingaddress",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "address": "1/595A",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "zipcode": "600115",
+    "phone": "8015536574"
+  }
+},
+{
+  "model": "orders.shippingaddress",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "address": "1/595A",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "zipcode": "600115",
+    "phone": "ag"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "address": 1,
+    "total_price": "0.00",
+    "created_at": "2025-11-26T07:40:11.612Z",
+    "status": "Confirmed"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "address": 2,
+    "total_price": "0.00",
+    "created_at": "2025-11-26T08:21:20.731Z",
+    "status": "Pending"
+  }
+},
+{
+  "model": "orders.payment",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "payment_mode": "Online",
+    "payment_status": "Completed",
+    "payment_id": null
+  }
+}
+]
