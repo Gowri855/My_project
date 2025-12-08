@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 from decouple import config
 import dj_database_url
+import cloudinary
 
 
 # Build paths inside the project
@@ -32,9 +33,6 @@ CSRF_TRUSTED_ORIGINS = []
 if 'RENDER_EXTERNAL_HOSTNAME' in os.environ:
     CSRF_TRUSTED_ORIGINS.append(f"https://{os.environ['RENDER_EXTERNAL_HOSTNAME']}")
 
-# Add any custom domains here if you have them
-# CSRF_TRUSTED_ORIGINS += ['https://www.yourdomain.com']
-
 
 # Application definition
 INSTALLED_APPS = [
@@ -44,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',  # Must be before django.contrib.staticfiles
     'django.contrib.staticfiles',
+    'cloudinary',
     'shop',
     'cart',      
     'orders',    
@@ -126,9 +126,27 @@ if os.path.exists(os.path.join(BASE_DIR, 'static')):
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-# Media files
+# ===========================
+# CLOUDINARY CONFIGURATION
+# ===========================
+
+# Configure Cloudinary
+cloudinary.config(
+    cloud_name=config('CLOUDINARY_CLOUD_NAME', default=''),
+    api_key=config('CLOUDINARY_API_KEY', default=''),
+    api_secret=config('CLOUDINARY_API_SECRET', default=''),
+)
+
+# Cloudinary Storage Settings
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME', default=''),
+    'API_KEY': config('CLOUDINARY_API_KEY', default=''),
+    'API_SECRET': config('CLOUDINARY_API_SECRET', default=''),
+}
+
+# Media files - Using Cloudinary for storage
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Default primary key field type
