@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',  # Must be before django.contrib.staticfiles
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'cloudinary',
     'shop',
     'cart',      
@@ -113,7 +113,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Static files (CSS, JavaScript, Images) - Served by WhiteNoise
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -123,11 +123,17 @@ if os.path.exists(os.path.join(BASE_DIR, 'static')):
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 
+# WhiteNoise configuration - Don't use CompressedManifestStaticFilesStorage
+# Use regular storage to avoid font path issues
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# This tells WhiteNoise to not be strict about missing files
+WHITENOISE_MANIFEST_STRICT = False
 
 
 # ===========================
 # CLOUDINARY CONFIGURATION
+# (Only for product images/media)
 # ===========================
 
 # Configure Cloudinary
@@ -137,14 +143,14 @@ cloudinary.config(
     api_secret=config('CLOUDINARY_API_SECRET', default=''),
 )
 
-# Cloudinary Storage Settings
+# Cloudinary Storage Settings - Only for media files
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME', default=''),
     'API_KEY': config('CLOUDINARY_API_KEY', default=''),
     'API_SECRET': config('CLOUDINARY_API_SECRET', default=''),
 }
 
-# Media files - Using Cloudinary for storage
+# Media files using Cloudinary
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
