@@ -1,13 +1,16 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
+from cloudinary.models import CloudinaryField
 import datetime
 import os
+
 
 def getFileName(request, filename):
     now_time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
     new_filename = "%s_%s" % (now_time, filename)
     return os.path.join('uploads/', new_filename)
+
 
 class Category(models.Model):
     name = models.CharField(max_length=150)
@@ -26,6 +29,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class SubCategory(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="subcategories")
     name = models.CharField(max_length=150)
@@ -41,12 +45,13 @@ class SubCategory(models.Model):
     def __str__(self):
         return f"{self.category.name} > {self.name}"
 
+
 class Product(models.Model):
     subcategory = models.ForeignKey(SubCategory, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=150)
     slug = models.SlugField(unique=True, blank=True, null=True)
     vendor = models.CharField(max_length=150)
-    product_image = models.ImageField(upload_to=getFileName, null=True, blank=True)
+    productimage = CloudinaryField('image', blank=True, null=True)  # Using Cloudinary for product images
     quantity = models.IntegerField()
     original_price = models.FloatField()
     selling_price = models.FloatField()
@@ -76,6 +81,6 @@ class Cart(models.Model):
 
 
 class wishlist_fav(models.Model):
-    user=models.ForeignKey(User,on_delete=models.CASCADE)
-    product=models.ForeignKey(Product,on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
