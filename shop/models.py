@@ -51,7 +51,7 @@ class Product(models.Model):
     name = models.CharField(max_length=150)
     slug = models.SlugField(unique=True, blank=True, null=True)
     vendor = models.CharField(max_length=150)
-    productimage = CloudinaryField('image', blank=True, null=True)  # Using Cloudinary for product images
+    productimage = CloudinaryField('image', blank=True, null=True)
     quantity = models.IntegerField()
     original_price = models.FloatField()
     selling_price = models.FloatField()
@@ -65,8 +65,14 @@ class Product(models.Model):
             self.slug = slugify(self.name)
         super(Product, self).save(*args, **kwargs)
 
+    @property
+    def product_image(self):
+        """Alias for productimage field for backward compatibility"""
+        return self.productimage
+
     def __str__(self):
         return f"{self.subcategory.name} > {self.name}"
+
 
 
 class Cart(models.Model):
