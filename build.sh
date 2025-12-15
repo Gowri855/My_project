@@ -20,3 +20,4 @@ python manage.py migrate
 
 
 echo "Build completed successfully!"
+python manage.py load_production_data
