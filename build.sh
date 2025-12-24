@@ -22,10 +22,3 @@ python manage.py migrate
 echo "Build completed successfully!"
 python manage.py load_production_data
 
-# Existing lines (example)
-pip install -r requirements.txt
-python manage.py collectstatic --noinput
-python manage.py migrate
-
-# TEMP: create superuser on Render if none exists
-python manage.py shell -c "from django.contrib.auth import get_user_model; U=get_user_model(); U.objects.filter(is_superuser=True).exists() or U.objects.create_superuser('gowri855','whoops855@gmail.com','AjaiGowriAlohomora@855')"
