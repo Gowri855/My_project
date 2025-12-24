@@ -6,27 +6,52 @@ Whoops! | 🩵
 
 {% block content %}
 {% include 'shop/inc/slider.html' %}
-<div class="container" style="margin-top:70px; min-height: 800px;">
-    <div class="row">
-        <div class="col-12">
-          <h1>Trending <i class="fa-solid fa-arrow-trend-up"></i> <i class="fa-solid fa-fire"></i></h1>    
+
+<div class="container" style="margin-top: 70px; min-height: 800px;">
+  <!-- Section Header -->
+  <div class="row mb-4">
+    <div class="col-12 text-center">
+      <h1 class="section-title">
+        Trending 
+        <i class="fa-solid fa-arrow-trend-up"></i> 
+        <i class="fa-solid fa-fire"></i>
+      </h1>
+      <p class="text-muted">Our hottest products right now</p>
+    </div>
+  </div>
+
+  <!-- Products Grid (CSS Grid Alternative) -->
+  <div class="products-grid">
+    {% for item in products %}
+      <div class="card_p">
+        <!-- Product Image with Link -->
+        <div class="pic-box">
+          <a href="{% url 'shop:product_details' item.subcategory.category.slug item.subcategory.slug item.slug %}">
+            <img src="{{ item.product_image.url }}" class="card-img-top" alt="{{ item.name }}" loading="lazy">
+          </a>
+          
+          <!-- Trending Badge -->
+          {% if item.trending %}
+            <span class="hot">🔥 Hot</span>
+          {% endif %}
         </div>
-        <!-- Responsive grid: 1 col mobile, 2 col tablet, 3-4 col desktop -->
-        {% for item in products %}
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-          <div class="card_p">
-            <img src="{{ item.product_image.url }}" class="card-img-top" alt="{{ item.name }}">
-            <a href="{% url 'shop:product_details' item.subcategory.category.slug item.subcategory.slug item.slug %}" class="stretched-link"></a>
-            <div class="card-body">
-              <h5 class="card-title">{{ item.name }}</h5>
-              <p class="card-text">
-                <span class="float-end old_price">Rs.{{ item.original_price|stringformat:'d' }}</span>
-                <span class="float-start new_price">Rs.{{ item.selling_price|stringformat:'d' }}</span>
-              </p>
-            </div>
+
+        <!-- Product Info -->
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          
+          <!-- Responsive Price Container -->
+          <div class="price-container">
+            <span class="new_price">₹{{ item.selling_price|stringformat:'d' }}</span>
+            <span class="old_price">₹{{ item.original_price|stringformat:'d' }}</span>
           </div>
         </div>
-        {% endfor %}
       </div>
+    {% empty %}
+      <div class="col-12 text-center py-5">
+        <p class="text-muted">No trending products available at the moment.</p>
+      </div>
+    {% endfor %}
   </div>
+</div>
 {% endblock content %}
