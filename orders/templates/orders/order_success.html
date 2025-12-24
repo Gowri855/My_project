@@ -1,8 +1,110 @@
 {% extends 'shop/layouts/main.html' %}
+
+{% block title %}
+Order Confirmation | Whoops!
+{% endblock title %}
+
 {% block content %}
-<h2>Order Placed Successfully!</h2>
-<p>Order ID: <strong>{{ order.id }}</strong></p>
-<p>Amount: ₹{{ order.total_price }}</p>
-<p>Status: {{ order.status }}</p>
-<a href="{% url 'my_orders' %}">View My Orders</a>
-{% endblock %}
+<section class="bg-light py-4 my-5" style="min-height: 800px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card text-center mb-4">
+          <div class="card-body py-5">
+            <i class="fa fa-check-circle" style="font-size: 64px; color: #28a745;"></i>
+            <h2 class="mt-3 text-success">Order Confirmed!</h2>
+            <p class="text-muted">Your order has been successfully placed.</p>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-header bg-light">
+            <h5 class="mb-0">Order Details</h5>
+          </div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <strong>Order Number:</strong><br>
+                {{ order.order_number }}
+              </div>
+              <div class="col-md-6">
+                <strong>Order Date:</strong><br>
+                {{ order.created_at|date:"d M Y, H:i" }}
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <strong>Order Total:</strong><br>
+                <h4 class="text-primary">Rs. {{ order.total_amount|floatformat:2 }}</h4>
+              </div>
+              <div class="col-md-6">
+                <strong>Order Status:</strong><br>
+                <span class="badge bg-warning">{{ order.status }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-header bg-light">
+            <h5 class="mb-0">Items Ordered</h5>
+          </div>
+          <div class="card-body">
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in items %}
+                <tr>
+                  <td>{{ item.product.name }}</td>
+                  <td>{{ item.quantity }}</td>
+                  <td>Rs. {{ item.price|floatformat:2 }}</td>
+                  <td><strong>Rs. {{ item.product.selling_price|add:0|multiply:item.quantity|floatformat:2 }}</strong></td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-header bg-light">
+            <h5 class="mb-0">Shipping Address</h5>
+          </div>
+          <div class="card-body">
+            {% if shipping_address %}
+            <p>
+              <strong>{{ shipping_address.first_name }} {{ shipping_address.last_name }}</strong><br>
+              {{ shipping_address.address }}<br>
+              {{ shipping_address.city }}, {{ shipping_address.state }} - {{ shipping_address.postal_code }}<br>
+              <strong>Phone:</strong> {{ shipping_address.phone }}<br>
+              <strong>Email:</strong> {{ shipping_address.email }}
+            </p>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="alert alert-info">
+          <strong>📧 Confirmation Email:</strong> A confirmation email has been sent to {{ order.user.email }}. You can track your order status anytime from your account.
+        </div>
+
+        <div class="d-flex gap-2">
+          <a href="{% url 'orders:order_history' %}" class="btn btn-primary">
+            <i class="fa fa-history"></i> View All Orders
+          </a>
+          <a href="{% url 'shop:home' %}" class="btn btn-outline-secondary">
+            Continue Shopping
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
