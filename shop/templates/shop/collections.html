@@ -5,44 +5,90 @@ Collections | Whoops!
 {% endblock title %}
 
 {% block content %}
-<section class="py-5 text-center container" style="margin-top:60px;">
+
+<!-- Hero Section -->
+<section class="py-5 text-center container" style="margin-top: 70px;">
   <div class="row py-lg-5">
-    <div class="col-lg-6 col-md-8 mx-auto">
-      <h1 class="fw-light">Bestsellers</h1>
-      <p class="lead text-muted">Our most popular products based on sales. Updated hourly.</p>
-      <p>
-        <a href="#" class="btn btn-primary my-2">Already User</a>
-        <a href="#" class="btn btn-secondary my-2">Register</a>
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <h1 class="fw-bold display-4">Our Collections</h1>
+      <p class="lead text-muted">
+        Explore our handcrafted categories - from embroidery to resin art, each piece tells a story.
       </p>
+      
+      <!-- Improved CTA Buttons -->
+      {% if request.user.is_authenticated %}
+        <div class="d-flex gap-2 justify-content-center flex-wrap">
+          <a href="{% url 'shop:home' %}" class="btn btn-primary btn-lg">
+            <i class="fa fa-home"></i> Back to Home
+          </a>
+          <a href="{% url 'shop:cart' %}" class="btn btn-outline-secondary btn-lg">
+            <i class="fa fa-shopping-cart"></i> View Cart
+          </a>
+        </div>
+      {% else %}
+        <div class="d-flex gap-2 justify-content-center flex-wrap">
+          <a href="{% url 'shop:login' %}" class="btn btn-primary btn-lg">
+            <i class="fa fa-sign-in"></i> Login
+          </a>
+          <a href="{% url 'shop:register' %}" class="btn btn-outline-secondary btn-lg">
+            <i class="fa fa-user-plus"></i> Register
+          </a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
 
-<section class="bg-light py-4 my-5 style="min-height: 800px;">
+<!-- Categories Section -->
+<section class="bg-light py-5" style="min-height: 600px;">
   <div class="container">
-    <div class="row">
+    <div class="row mb-4">
       <div class="col-12">
-        <h4 class="mb-3">CATEGORIES</h4>
-        <hr style="border-color:#b8bfc2;">
+        <h4 class="mb-3">BROWSE BY CATEGORY</h4>
+        <hr style="border-color: #b8bfc2;">
         {% include 'shop/inc/breadcrumb.html' with category_name='Collections' %}
-
       </div>
+    </div>
 
+    <!-- Responsive Category Grid -->
+    <div class="row g-4">
       {% for item in category %}
-      <div class="col-md-4 col-lg-3">
-        <div class="card bg-light my-3 box">
-          <img src="{{ item.image.url }}" class="card-image-top" alt="Categories">
-          <a href="{% url 'shop:subcollections' item.slug %}" class="stretched-link"></a>
-          <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <p class="card-text">{{ item.description }}</p>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm category-card">
+            <!-- Category Image -->
+            <div class="position-relative overflow-hidden" style="height: 250px;">
+              <img 
+                src="{{ item.image.url }}" 
+                class="card-img-top w-100 h-100" 
+                style="object-fit: cover; transition: transform 0.3s ease;"
+                alt="{{ item.name }}"
+                loading="lazy"
+              >
+              <a href="{% url 'shop:subcollections' item.slug %}" class="stretched-link"></a>
+            </div>
+
+            <!-- Category Info -->
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">{{ item.name }}</h5>
+              <p class="card-text text-muted small">{{ item.description|truncatewords:15 }}</p>
+              
+              <!-- Optional: View Products Link -->
+              <div class="mt-3">
+                <span class="text-primary small">
+                  View Products <i class="fa fa-arrow-right"></i>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      {% empty %}
+        <div class="col-12 text-center py-5">
+          <i class="fa fa-box-open fa-3x text-muted mb-3"></i>
+          <p class="text-muted">No categories available at the moment.</p>
+        </div>
       {% endfor %}
     </div>
   </div>
 </section>
-
 
 {% endblock content %}
